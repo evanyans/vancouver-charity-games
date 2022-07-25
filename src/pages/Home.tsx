@@ -33,9 +33,17 @@ const Home = () => {
             </Head>
             <Body>
                 <Rectangle>
-                    <Topic>Topic</Topic>
-                    <TitleText></TitleText>
-                    <BodyText></BodyText></Rectangle>
+                    <Text>
+                        <Topic>What we do</Topic>
+                        <TitleText>Game for a Cause</TitleText>
+                        <BodyText>Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments. 
+                                <br></br><br></br>
+                                Our group of organizers know all too well the power video games have on bringing people of countless backgrounds together in the name of a shared interest: from the countless attendees at eSports competitions to its growing usage in education, video games continue to grow in popularity and application today with no evidence of stopping. 
+                                <br></br><br></br>
+                                Following its explosive growth, our group of friends wondered how we could cultivate our shared interest for video games into something bigger than ourselves. And so, Vancouver Charity Games was born, with the goal of using our shared interest for the purpose of benefiting our community. Through our events, we hope to bring people together to play the games they love while simultaneously raising awareness and funds for the charities we support, fulfilling our mission of cultivating our love for video games into something more - a way to better our communities.
+                        </BodyText>
+                    </Text>
+                </Rectangle>
 
             </Body>
 
@@ -83,12 +91,12 @@ export const Register = styled.button`
 
     transition: all 0.2s ease-in-out;
     &:hover {
-        &:hover {
         transition: all 0.2s ease-in-out;
         background:#F5DFFF;
         color:#0D0C0C;
         border:solid 2px #F5DFFF;
-    }
+        cursor:pointer;
+    
     }
 
 `
@@ -146,15 +154,14 @@ export const Body = styled.div`
 export const Rectangle = styled.div`
     display:flex;   
     border-radius: 30px 30px 0px 0px;
-    width: 70%;
+    width: 750px;
     height:1057px;
     background: rgba(237, 223, 255,0.37);
     z-index:-10;
 `
 
 export const Topic = styled.div`
-    margin-left:110px;
-    margin-top:80px;
+
     font-size:24px;
     font-weight:600;
     color:#C549FF;
@@ -162,9 +169,18 @@ export const Topic = styled.div`
 `
 
 export const TitleText = styled.div`
-    
+    font-weight:600;
+    font-size:48px;
 `
 
 export const BodyText = styled.div`
-    
+    margin-top:25px;
+    font-size:20px;
+    padding-right:60px;
+`
+
+export const Text = styled.div`
+    margin-left:80px;
+    margin-top:80px;
+
 `

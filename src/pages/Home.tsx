@@ -1,5 +1,9 @@
 import React from 'react'
 import gamers from '../images/gamers.png';
+import foodbank from '../images/foodbank.png';
+import redcross from '../images/redcross.png';
+import hospital from '../images/hospital.png';
+import dots from '../images/dots.png';
 import styled from 'styled-components';
 import CountUp from 'react-countup';
 
@@ -32,20 +36,29 @@ const Home = () => {
                 </Arrows>
             </Head>
             <Body>
-                <Rectangle>
-                    <Text>
+                <Shapes>
+                    <Rectangle>
                         <Topic>What we do</Topic>
                         <TitleText>Game for a Cause</TitleText>
-                        <BodyText>Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments. 
-                                <br></br><br></br>
-                                Our group of organizers know all too well the power video games have on bringing people of countless backgrounds together in the name of a shared interest: from the countless attendees at eSports competitions to its growing usage in education, video games continue to grow in popularity and application today with no evidence of stopping. 
-                                <br></br><br></br>
-                                Following its explosive growth, our group of friends wondered how we could cultivate our shared interest for video games into something bigger than ourselves. And so, Vancouver Charity Games was born, with the goal of using our shared interest for the purpose of benefiting our community. Through our events, we hope to bring people together to play the games they love while simultaneously raising awareness and funds for the charities we support, fulfilling our mission of cultivating our love for video games into something more - a way to better our communities.
+                        <BodyText>Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments.
+                            <br></br><br></br>
+                            Our group of organizers know all too well the power video games have on bringing people of countless backgrounds together in the name of a shared interest: from the countless attendees at eSports competitions to its growing usage in education, video games continue to grow in popularity and application today with no evidence of stopping.
+                            <br></br><br></br>
+                            Following its explosive growth, our group of friends wondered how we could cultivate our shared interest for video games into something bigger than ourselves. And so, Vancouver Charity Games was born, with the goal of using our shared interest for the purpose of benefiting our community. Through our events, we hope to bring people together to play the games they love while simultaneously raising awareness and funds for the charities we support, fulfilling our mission of cultivating our love for video games into something more - a way to better our communities.
                         </BodyText>
-                    </Text>
-                </Rectangle>
-
+                    </Rectangle>
+                    <Boxes>
+                        <Donate>
+                            <ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA>
+                        </Donate>
+                        <Donate>
+                        <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
+                        </Donate>
+                        <Donate><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
+                    </Boxes>
+                </Shapes>
             </Body>
+
 
         </>
     )
@@ -147,17 +160,34 @@ export const Body = styled.div`
     margin: auto;
     margin-top:301px;
     width: 100%;
-    max-width: 1124px;
+    max-width: 1224px;
 
 `
-
 export const Rectangle = styled.div`
-    display:flex;   
+    display:flex;
+    flex-direction:column;  
+    justify-content:left;
+    flex-shrink:1;
+    align-items:flex-start;
     border-radius: 30px 30px 0px 0px;
-    width: 750px;
-    height:1057px;
+    max-width:1200px;
+    height:900px;
     background: rgba(237, 223, 255,0.37);
     z-index:-10;
+
+    padding-top:4rem;
+    padding-left:4rem;
+    padding-right:9rem;
+    
+    .dots {
+        width:100px;
+        position:relative;
+        left:520px;
+        bottom:100px;
+    }
+    @media screen and (max-width: 678px) {
+        margin-top:-115px;
+    }
 `
 
 export const Topic = styled.div`
@@ -175,12 +205,77 @@ export const TitleText = styled.div`
 
 export const BodyText = styled.div`
     margin-top:25px;
-    font-size:20px;
-    padding-right:60px;
+    font-size:18px;
 `
 
-export const Text = styled.div`
-    margin-left:80px;
-    margin-top:80px;
+export const Shapes = styled.div`
+    display:flex;
+
+`
+export const Boxes = styled.div`
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+
+`
+
+
+export const Donate = styled.span`
+    width:430px;
+    height:130px;
+    border-radius:10px;
+    background-color:white;
+    border: solid 1px #0D0C0C;
+    
+    position:relative;
+    left:-80px;
+    top:100px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    display:flex;
+    flex-direction:row;
+
+`
+
+export const ContentA = styled.div`
+    display:flex;
+    flex-direction:row;
+.foodbank{
+    width:70px;
+    padding-top:18px;
+}
+.redcross {
+    width:80px;
+    padding-top:9px;
+}
+.hospital {
+    width:110px;
+    padding-top:12px;
+    padding-right:3px;
+}
+`
+
+export const Circle = styled.span`
+    background:#F3F3F3;
+    width:100px;
+    height:100px;
+    display:block;
+    border-radius:50%;
+    text-align:center;
+
+    margin-top:15px;
+    margin-left:20px;
+`
+
+export const ContentText = styled.div`
+    margin-top:32px;
+    margin-left:20px;
+    color:#777777;
+    span{
+        font-weight:600;
+        font-size: 30px;
+        color:black;
+    }
 
 `

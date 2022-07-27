@@ -5,9 +5,12 @@
 
 html {
     background: #FBF0FF;
-
+    height:100%;
 }
 
+body{
+    min-height:100vh;
+}
 
 * {
     font-family: 'Inter', sans-serif;

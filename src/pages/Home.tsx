@@ -52,7 +52,7 @@ const Home = () => {
                             <ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA>
                         </Donate>
                         <Donate>
-                        <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
+                            <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
                         </Donate>
                         <Donate><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
                     </Boxes>
@@ -79,7 +79,9 @@ export const Title = styled.div`
     font-size: 90px;
     position:auto;
     text-align:center;
-    
+    @media screen and (max-width: 678px) {
+        font-size:80px;
+    }
 `
 
 export const Subtit = styled.div`
@@ -90,6 +92,9 @@ export const Subtit = styled.div`
     padding-top:22px;
     .sub{
         font-weight:200;
+    }
+    @media screen and (max-width: 678px) {
+        font-size:19px;
     }
 `
 
@@ -110,6 +115,9 @@ export const Register = styled.button`
         border:solid 2px #F5DFFF;
         cursor:pointer;
     
+    }
+    @media screen and (max-width: 678px) {
+        margin-top:40px;
     }
 
 `
@@ -186,8 +194,15 @@ export const Rectangle = styled.div`
         bottom:100px;
     }
     @media screen and (max-width: 678px) {
-        margin-top:-115px;
+        margin-top:0px;
     }
+    @media screen and (max-width: 604px) {
+        margin-top:-100px;
+    }
+    @media only screen and (max-width: 992px) {
+    padding-right:4rem;
+}
+
 `
 
 export const Topic = styled.div`
@@ -210,6 +225,7 @@ export const BodyText = styled.div`
 
 export const Shapes = styled.div`
     display:flex;
+
 
 `
 export const Boxes = styled.div`
@@ -235,6 +251,13 @@ export const Donate = styled.span`
 
     display:flex;
     flex-direction:row;
+    @media only screen and (max-width: 1048px) {
+    display:none;
+}
+
+@media only screen and (min-width: 1200px) {
+    flex-direction:row;
+}
 
 `
 

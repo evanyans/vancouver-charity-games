@@ -52,6 +52,9 @@ export const Text = styled.div`
         width:33.33333%;
         text-align:right;
     }
+    @media only screen and (max-width: 600px) {
+    font-size:12px;
+}
 
 
     

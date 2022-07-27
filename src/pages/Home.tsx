@@ -79,9 +79,9 @@ export const Title = styled.div`
     font-size: 90px;
     position:auto;
     text-align:center;
-    @media screen and (max-width: 678px) {
-        font-size:80px;
-    }
+    @media only screen and (max-width: 600px) {
+    font-size:70px;
+}       
 `
 
 export const Subtit = styled.div`
@@ -116,7 +116,7 @@ export const Register = styled.button`
         cursor:pointer;
     
     }
-    @media screen and (max-width: 678px) {
+    @media screen and (max-width: 600px) {
         margin-top:40px;
     }
 
@@ -193,13 +193,10 @@ export const Rectangle = styled.div`
         left:520px;
         bottom:100px;
     }
-    @media screen and (max-width: 678px) {
+    @media screen and (max-width: 600px) {
         margin-top:0px;
     }
-    @media screen and (max-width: 604px) {
-        margin-top:-100px;
-    }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 1048px) {
     padding-right:4rem;
 }
 

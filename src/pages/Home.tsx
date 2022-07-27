@@ -218,6 +218,10 @@ export const TitleText = styled.div`
 export const BodyText = styled.div`
     margin-top:25px;
     font-size:18px;
+
+    @media screen and (max-width: 600px) {
+        font-size:16px;
+    }
 `
 
 export const Shapes = styled.div`
@@ -297,5 +301,6 @@ export const ContentText = styled.div`
         font-size: 30px;
         color:black;
     }
+
 
 `

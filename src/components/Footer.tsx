@@ -17,7 +17,7 @@ export default Footer;
 
 export const Wrapper = styled.div`
     background:black;
-    height:55px;
+    height:50px;
     z-index:999;
 
     padding-top:16px;

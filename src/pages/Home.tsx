@@ -10,8 +10,8 @@ import CountUp from 'react-countup';
 const Home = () => {
 
     return (
-        <>
-            <img className="gamer" src={gamers} alt="Logo" />
+        <Wrapper>
+            <img className="gamer" src={gamers} alt="gamers" />
             <Head>
                 <Title>Vancouver <br></br><div className="gradient">Charity</div> Games</Title>
                 <Subtit>Current: 2022 Summer League of Legends Tournament<div className="sub">August 5th-7th, 12-3PM PST</div></Subtit>
@@ -60,12 +60,16 @@ const Home = () => {
             </Body>
 
 
-        </>
+        </Wrapper>
     )
 
 }
 
 export default Home;
+
+export const Wrapper = styled.div`
+
+`
 
 export const Head = styled.div`
     text-align:center;

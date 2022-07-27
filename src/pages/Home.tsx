@@ -185,7 +185,7 @@ export const Rectangle = styled.div`
 
     padding-top:4rem;
     padding-left:4rem;
-    padding-right:9rem;
+    padding-right:4rem;
     
     .dots {
         width:100px;
@@ -193,12 +193,24 @@ export const Rectangle = styled.div`
         left:520px;
         bottom:100px;
     }
-    @media screen and (max-width: 600px) {
-        margin-top:0px;
+    @media screen and (max-width: 531px) {
+        margin-top:-90px;
+        padding-right:4rem;
+        padding-top:2rem;
     }
-    @media only screen and (max-width: 1048px) {
-    padding-right:4rem;
-}
+    @media screen and (min-width: 600px) {
+        margin-top:0px;
+        padding-right:4rem;
+        padding-top:2rem;
+    }
+    @media only screen and (min-width: 1048px) {
+    padding-right:9rem;
+    padding-top:4rem;
+    }
+    @media only screen and (min-width: 1200px) {
+    padding-right:9rem;
+    padding-top:4rem;
+    }
 
 `
 
@@ -207,7 +219,6 @@ export const Topic = styled.div`
     font-size:24px;
     font-weight:600;
     color:#C549FF;
-
 `
 
 export const TitleText = styled.div`
@@ -220,6 +231,7 @@ export const BodyText = styled.div`
     font-size:18px;
 
     @media screen and (max-width: 600px) {
+        margin-top:10px;
         font-size:16px;
     }
 `

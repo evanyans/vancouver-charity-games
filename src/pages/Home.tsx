@@ -163,8 +163,12 @@ export const Players = styled.div`
 
 `
 export const Arrows = styled.div`
-    @media screen and (max-width: 600px) {
-        padding-bottom:100px;
+    @media screen and (max-width: 3250px) {
+        margin-bottom:0px;
+        position:relative;
+    }
+    @media screen and (min-width: 600px) {
+        margin-bottom:100px;
         position:relative;
     }
 `
@@ -191,25 +195,30 @@ export const Rectangle = styled.div`
     padding-top:4rem;
     padding-left:4rem;
     padding-right:4rem;
-    
     @media screen and (max-width: 531px) {
         padding-right:4rem;
         margin-top:0px;
         padding-top:2rem;
+        padding-left:2rem;
+        padding-right:2rem;
     }
     @media screen and (min-width: 600px) {
         padding-right:4rem;
         padding-top:2rem;
+        padding-left:2rem;
+        padding-right:2rem;
     }
     @media only screen and (min-width: 1048px) {
         margin-top:0;
     padding-right:9rem;
     padding-top:4rem;
+    padding-left:4rem;
     }
     @media only screen and (min-width: 1200px) {
         margin-top:0;
     padding-right:9rem;
     padding-top:4rem;
+    padding-left:4rem;
     }
 
 `

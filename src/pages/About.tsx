@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import sombra from '../images/sombra.png';
+import wonyoung from '../images/wonyoung.png';
+import { AiFillLinkedin } from 'react-icons/ai';
 
 const About = () => {
   return (
@@ -19,7 +21,46 @@ const About = () => {
         <TitleText>Our Team</TitleText>
         <Cards>
           <Card>
-            <img className="sombra" src={sombra} alt="sombra" />
+            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <Name>Jang Wonyoung</Name>
+            <Position>Lead Organizer</Position>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+          </Card>
+          <Card>
+            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <Name>Jang Wonyoung</Name>
+            <Position>Lead Organizer</Position>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+          </Card>
+          <Card>
+            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <Name>Jang Wonyoung</Name>
+            <Position>Lead Organizer</Position>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+          </Card>
+          <Card>
+            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <Name>Jang Wonyoung</Name>
+            <Position>Lead Organizer</Position>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+          </Card>
+          <Card>
+            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <Name>Jang Wonyoung</Name>
+            <Position>Lead Organizer</Position>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+          </Card>
+          <Card>
+            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <Name>Jang Wonyoung</Name>
+            <Position>Lead Organizer</Position>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+          </Card>
+          <Card>
+            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <Name>Jang Wonyoung</Name>
+            <Position>Lead Organizer</Position>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
           </Card>
         </Cards>
       </Team>
@@ -46,6 +87,13 @@ export const Team = styled.div`
 
 export const Cards = styled.div`
 display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+gap:32px;
+justify-content:center;
+padding-bottom:100px;
+padding-left:150px;
+padding-right:150px;
 `
 
 export const Card = styled.span`
@@ -57,6 +105,41 @@ export const Card = styled.span`
     border: solid 1px #0D0C0C;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     display:flex;
+    flex-direction:column;
+    padding-top:20px;
+    
+
+    img{
+      align-self:center;
+      width:234px;
+      height:234px;
+      border-radius:50%;
+      border: solid 1px #0D0C0C;
+    }
+    a{
+      color:#0D0C0C;
+      text-decoration:none;
+      padding-left:40px;
+      padding-top:20px;
+      width:21px;
+      height:21px;
+      &:hover{
+        color:#C549FF;
+      }
+      }
+`
+
+export const Name = styled.div`
+  padding-top:20px;
+  padding-left:40px;
+  font-weight:700;
+  font-size:24px;
+`
+
+export const Position = styled.div`
+  padding-left:40px;
+  font-size:16px;
+  font-style:italic;
 `
 
 export const TitleText = styled.div`

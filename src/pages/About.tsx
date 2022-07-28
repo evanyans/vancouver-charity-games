@@ -11,7 +11,7 @@ const About = () => {
         <Text>
           <Topic>About Us</Topic>
           <Title>Who we are</Title>
-          <SubText>Lorem ipsum dolor sit amet. Non voluptatem aperiam qui placeat quaerat non fugit beatae aut consequatur aperiam et fuga alias. Est velit labore 33 rerum rerum ut molestiae deleniti. Sed expedita earum non nulla velit ex eaque libero id debitis omnis. Ea placeat sequi eos facilis distinctio aut illo aliquam 33 veniam fugiat est sint dolorem ut nulla consequatur. Aut animi ipsam et nulla officiis At voluptates officiis est dolorem voluptatem et consequatur ipsum id autem natus et ducimus reprehenderit. 
+          <SubText>Lorem ipsum dolor sit amet. Non voluptatem aperiam qui placeat quaerat non fugit beatae aut consequatur aperiam et fuga alias. Est velit labore 33 rerum rerum ut molestiae deleniti. Sed expedita earum non nulla velit ex eaque libero id debitis omnis. Ea placeat sequi eos facilis distinctio aut illo aliquam 33 veniam fugiat est sint dolorem ut nulla consequatur. Aut animi ipsam et nulla officiis At voluptates officiis est dolorem voluptatem et consequatur ipsum id autem natus et ducimus reprehenderit.
             At aliquid quos quo odit iure cum nisi delectus et distinctio ipsum et debitis saepe rem tenetur tenetur eum fuga voluptatibus.</SubText>
 
         </Text>
@@ -24,43 +24,43 @@ const About = () => {
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card>
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card>
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card>
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card>
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card>
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card>
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32}/></a>
+            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
         </Cards>
       </Team>
@@ -147,6 +147,26 @@ export const TitleText = styled.div`
   font-size:64px;
   padding-top:40px;
   padding-bottom:40px;
+  @media only screen and (max-width: 600px) {
+  font-size:40px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  font-size:64px;
+}
 `
 
 export const Body = styled.div`
@@ -163,6 +183,7 @@ flex-direction:row;
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   display:none;
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -177,12 +198,12 @@ flex-direction:row;
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  display:block;
+  display:none;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+  display:block;
 }
 }
 
@@ -196,19 +217,79 @@ export const Text = styled.div`
     padding-bottom:150px;
     padding-left:50px;
     padding-right:50px;
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  padding-top:30px;
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  padding-top:150px;
+}
 `
 
 export const Topic = styled.div`
       font-size:40px;
     font-weight:600;
     color:#C549FF;
+    @media only screen and (max-width: 600px) {
+  font-size:30px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  font-size:40px;
+}
 `
 
 export const Title = styled.div`
   color:white;
   font-size:96px;
   font-weight:800;
+  @media only screen and (max-width: 600px) {
+  font-size:46px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  font-size:96px;
+}
 `
 
 export const SubText = styled.div`
@@ -216,4 +297,26 @@ export const SubText = styled.div`
   font-size:20px;
   font-weight:300;
   padding-top:20px;
+  @media only screen and (max-width: 600px) {
+  font-size:16px;
+  padding-top:5px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  font-size:20px;
+  padding-top:20px;
+}
 `

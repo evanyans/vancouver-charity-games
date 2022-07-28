@@ -249,32 +249,34 @@ export const Text = styled.div`
     max-width: 1024px;
     padding-top:150px;
     padding-bottom:150px;
-    padding-left:50px;
+    padding-left:150px;
     padding-right:50px;
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   padding-top:30px;
   padding-bottom:60px;
+  padding-left:50px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+  padding-left:50px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+  padding-left:50px;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  padding-left:50px;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   padding-top:150px;
+  padding-left:150px;
 }
 `
 
@@ -309,7 +311,7 @@ export const Topic = styled.div`
 
 export const Title = styled.div`
   color:white;
-  font-size:96px;
+  font-size:86px;
   font-weight:800;
   @media only screen and (max-width: 600px) {
   font-size:46px;
@@ -329,7 +331,7 @@ export const Title = styled.div`
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  font-size:96px;
+  font-size:76px;
 }
 `
 

@@ -132,4 +132,5 @@ export const SubText = styled.div`
   color:white;
   font-size:20px;
   font-weight:300;
+  padding-top:20px;
 `

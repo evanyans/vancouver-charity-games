@@ -97,3 +97,22 @@ body{
         transform: rotate(45deg) translate(20px,20px);
     }
 }
+
+::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #aeb5b6;
+    border-radius: 20px;
+    border: .3vw solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #595d5e;
+  }

@@ -3,11 +3,14 @@ import styled from 'styled-components'
 import sombra from '../images/sombra.png';
 import wonyoung from '../images/wonyoung.png';
 import { AiFillLinkedin } from 'react-icons/ai';
+import vector from '../images/vector.png';
 
 const About = () => {
   return (
     <Wrapper>
+
       <Body>
+        <img className="vector" src={vector} alt="sombra" />
         <Text>
           <Topic>About Us</Topic>
           <Title>Who we are</Title>
@@ -82,6 +85,7 @@ export const Team = styled.div`
   display:flex;
   flex-direction:column;
   align-items:center;
+  z-index:9;
 
 `
 
@@ -173,6 +177,37 @@ export const Body = styled.div`
 background:#0D0C0C;
 display:flex;
 flex-direction:row;
+.vector{
+  position:absolute;
+  width:500px;
+  top:38rem;
+  left:-10rem;
+  @media only screen and (max-width: 600px) {
+  display:none;
+
+}
+
+@media only screen and (min-width: 600px) {
+  width:300px;
+  top:55rem;
+}
+
+@media only screen and (min-width: 768px) {
+  width:300px;
+  top:40rem;
+}
+
+@media only screen and (min-width: 992px) {
+  width:400px;
+  top:38rem;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  width:400px;
+  top:40rem;
+}
+}
 .sombra{
   display:block;
   max-height:300px;
@@ -180,6 +215,7 @@ flex-direction:row;
   width:auto;
   align-self:flex-end;
   padding-right:300px;
+  
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   display:none;
@@ -205,9 +241,7 @@ flex-direction:row;
 @media only screen and (min-width: 1200px) {
   display:block;
 }
-}
-
-`
+}`
 
 export const Text = styled.div`
   margin: auto;
@@ -220,18 +254,22 @@ export const Text = styled.div`
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   padding-top:30px;
+  padding-bottom:60px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -250,14 +288,17 @@ export const Topic = styled.div`
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

@@ -1,35 +1,39 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import sombra from '../images/sombra.png';
 import wonyoung from '../images/wonyoung.png';
 import { AiFillLinkedin } from 'react-icons/ai';
 import vector from '../images/vector.png';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const About = () => {
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  },[]);
   return (
     <Wrapper>
 
       <Body>
         <img className="vector" src={vector} alt="sombra" />
         <Text>
-          <Topic>About Us</Topic>
-          <Title>Who we are</Title>
-          <SubText>Lorem ipsum dolor sit amet. Non voluptatem aperiam qui placeat quaerat non fugit beatae aut consequatur aperiam et fuga alias. Est velit labore 33 rerum rerum ut molestiae deleniti. Sed expedita earum non nulla velit ex eaque libero id debitis omnis. Ea placeat sequi eos facilis distinctio aut illo aliquam 33 veniam fugiat est sint dolorem ut nulla consequatur. Aut animi ipsam et nulla officiis At voluptates officiis est dolorem voluptatem et consequatur ipsum id autem natus et ducimus reprehenderit.
+          <Topic data-aos="fade-up">About Us</Topic>
+          <Title data-aos="fade-up" >Who we are</Title>
+          <SubText data-aos="fade-up">Lorem ipsum dolor sit amet. Non voluptatem aperiam qui placeat quaerat non fugit beatae aut consequatur aperiam et fuga alias. Est velit labore 33 rerum rerum ut molestiae deleniti. Sed expedita earum non nulla velit ex eaque libero id debitis omnis. Ea placeat sequi eos facilis distinctio aut illo aliquam 33 veniam fugiat est sint dolorem ut nulla consequatur. Aut animi ipsam et nulla officiis At voluptates officiis est dolorem voluptatem et consequatur ipsum id autem natus et ducimus reprehenderit.
             At aliquid quos quo odit iure cum nisi delectus et distinctio ipsum et debitis saepe rem tenetur tenetur eum fuga voluptatibus.</SubText>
 
         </Text>
         <img className="sombra" src={sombra} alt="sombra" />
       </Body>
       <Team>
-        <TitleText>Our Team</TitleText>
-        <Cards>
-          <Card>
+        <TitleText data-aos="fade-down">Our Team</TitleText>
+        <Cards data-aos="fade-down">
+          <Card >
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
-          <Card>
+          <Card >
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>

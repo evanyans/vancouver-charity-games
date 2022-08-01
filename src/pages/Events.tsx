@@ -7,11 +7,11 @@ import { NavLink as Link } from 'react-router-dom';
 const Events = () => {
   return (
     <Wrapper>
-      <Body>
-        <Topic>Events</Topic>
-        <Title>Current Events</Title>
+      <Body >
+        <Topic data-aos="fade-up">Events</Topic>
+        <Title data-aos="fade-up">Current Events</Title>
       </Body>
-      <Current>
+      <Current data-aos="fade-up">
         <CardCur>
           <Image></Image>
           <Tourn>2022 SUMMER LEAGUE OF LEGENDS TOURNAMENT</Tourn>
@@ -21,11 +21,11 @@ const Events = () => {
         </CardCur>
       </Current>
       <PastTitle>
-        <Text>Past Events</Text>
-        <Line></Line>
+        <Text data-aos="fade-up">Past Events</Text>
+        <Line data-aos="fade-up"></Line>
       </PastTitle>
-      <Past>
-        <CardCur>
+      <Past data-aos="fade-up">
+        <CardCur >
           <Image></Image>
           <Tourn>2021 WINTER LEAGUE OF LEGENDS TOURNAMENT</Tourn>
           <Date>DEC 27TH - 29TH, 12-3PM</Date>

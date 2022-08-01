@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import About from './pages/About';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
+import SummervalBCH from './past/SummervalBCH';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/events" element={<Events/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/2021-summer-val" element={<SummervalBCH/>}/>
       </Routes>
       <Footer/>
     </Router>

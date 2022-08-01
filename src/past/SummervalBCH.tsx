@@ -39,8 +39,21 @@ export const Wrapper = styled.div`
   justify-content:center;
   padding-top: 7%;
   padding-bottom:200px;
+
+  @media only screen and (max-width: 600px) {
+    padding-left:5%;
+  padding-right:5%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   padding-left:5%;
   padding-right:5%;
+}
+@media only screen and (min-width: 768px) {
+padding-left:0;
+padding-right:0;
+}
 `
 
 export const Body = styled.div`

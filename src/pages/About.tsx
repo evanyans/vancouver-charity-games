@@ -1,15 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import sombra from '../images/sombra.png';
 import wonyoung from '../images/wonyoung.png';
 import { AiFillLinkedin } from 'react-icons/ai';
 import vector from '../images/vector.png';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+
 const About = () => {
-  useEffect(() => {
-    AOS.init({duration: 1000});
-  },[]);
+
   return (
     <Wrapper>
 

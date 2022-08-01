@@ -53,7 +53,7 @@ export const Text = styled.div`
         text-align:right;
     }
     @media only screen and (max-width: 600px) {
-    font-size:12px;
+    font-size:10px;
 }
 
 

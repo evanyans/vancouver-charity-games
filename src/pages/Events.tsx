@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import wonyoung from '../images/wonyoung.png';
 import UNICEF from '../images/UNICEF.png';
 import { NavLink as Link } from 'react-router-dom';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const Events = () => {
+
   return (
     <Wrapper>
       <Body >
@@ -24,22 +26,22 @@ const Events = () => {
         <Text data-aos="fade-up">Past Events</Text>
         <Line data-aos="fade-up"></Line>
       </PastTitle>
-      <Past data-aos="fade-up">
-        <CardCur >
+      <Past >
+        <CardCur data-aos="fade-up">
           <Image></Image>
           <Tourn>2021 WINTER LEAGUE OF LEGENDS TOURNAMENT</Tourn>
           <Date>DEC 27TH - 29TH, 12-3PM</Date>
           <Donate>PROCEEDS TO GREATER VANCOUVER FOOD BANK</Donate>
           <NavLink to="/2021-summer-val">Learn More</NavLink>
         </CardCur>
-        <CardCur>
+        <CardCur data-aos="fade-up">
           <Image></Image>
           <Tourn>2021 FALL LEAGUE OF LEGENDS TOURNAMENT</Tourn>
           <Date>SEP 4TH - 5TH, 2-6PM</Date>
           <Donate>PROCEEDS TO CANADIAN RED CROSS</Donate>
           <NavLink to="/">Learn More</NavLink>
         </CardCur>
-        <CardCur>
+        <CardCur data-aos="fade-up">
           <Image></Image>
           <Tourn>2021 SUMMER VALORANT TOURNAMENT</Tourn>
           <Date>JUL 30TH - AUG 1ST, 3-6PM</Date>

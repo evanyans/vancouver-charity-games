@@ -69,6 +69,8 @@ export const Body = styled.div`
     
     padding-left:5%;
     padding-right:5%;
+    padding-top:50px;
+    padding-bottom:50px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -95,12 +97,52 @@ export const Topic = styled.div`
   color:#C549FF;
   font-size:40px;
   font-weight:600;
+  @media only screen and (max-width: 600px) {
+    font-size:18px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ font-size:36px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
 `
 
 export const Title = styled.div`
   color:white;
   font-size:76px;
   font-weight:800;
+  @media only screen and (max-width: 600px) {
+    font-size:30px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ font-size:66px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
 `
 
 export const Current = styled.div`
@@ -113,8 +155,8 @@ export const Current = styled.div`
 
   @media only screen and (max-width: 600px) {
     justify-content:center;
-    padding-left:0;
-    padding-right:0;
+    padding-left:5%;
+    padding-right:5%;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -268,8 +310,8 @@ export const Past = styled.div`
 
   @media only screen and (max-width: 600px) {
     justify-content:center;
-    padding-left:0;
-    padding-right:0;
+    padding-left:5%;
+    padding-right:5%;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

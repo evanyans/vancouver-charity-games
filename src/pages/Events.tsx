@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
 import wonyoung from '../images/wonyoung.png';
-import UNICEF from '../images/UNICEF.png';
 import { NavLink as Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 

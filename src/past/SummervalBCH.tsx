@@ -39,6 +39,7 @@ export const Wrapper = styled.div`
   display:flex;
   justify-content:center;
   padding-top: 7%;
+  padding-bottom:300px;
   @media only screen and (max-width: 600px) {
     padding-left:5%;
   padding-right:5%;

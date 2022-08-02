@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import vcg from '../images/vcg.svg';
 
 const Contact = () => {
 
@@ -8,11 +9,13 @@ const Contact = () => {
       <Body>
         <Title>Contact</Title>
         <Form>
-          <input type="text" placeholder="Name"/>
-          <input type="email" placeholder="Email"/>
-          <textarea rows={6} id="message" placeholder="Message"></textarea>
+          <input type="text" placeholder="Name" required/>
+          <input type="email" placeholder="Email" required/>
+          <textarea rows={6} id="message" placeholder="Message" required></textarea>
+          <input type="submit" value="Submit" />
         </Form>
       </Body>
+      <img className="vcg" src={vcg} alt="vcg" />
     </Wrapper>
   )
 }
@@ -20,6 +23,35 @@ const Contact = () => {
 export default Contact
 
 export const Wrapper = styled.div`
+.vcg{
+  position:absolute;
+  width:510px;
+  top:192px;
+  right:10%;
+  z-index:-10;
+  @media only screen and (max-width: 600px) {
+  width:300px;
+ top:494px;
+ right:4%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  width:510px;
+}
+}
 `
 
 export const Body = styled.div`
@@ -34,6 +66,13 @@ export const Title = styled.div`
   color:#0D0C0C;
   font-size:66px;
   padding-bottom:15px;
+  @media only screen and (max-width: 600px) {
+    font-size:36px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
 `
 
 export const Form = styled.form`
@@ -42,34 +81,63 @@ export const Form = styled.form`
   gap:.75rem;
   width:85%;
   max-width:504px;
-  
   input[type=text]{
     height:53px;
-    font-size:20px;
+    font-size:18px;
     font-weight:300;
     background-color:#F6E2FF;
     border-radius:4px;
     border: solid 1px #0D0C0C;
     padding-left:2%;
+    @media only screen and (max-width: 600px) {
+    font-size:14px;
+    height:40px;
+}
+
   }
   input[type=email]{
     height:53px;
-    font-size:20px;
+    font-size:18px;
     font-weight:300;
     background-color:#F6E2FF;
     border-radius:4px;
     border: solid 1px #0D0C0C;
     padding-left:2%;
+    @media only screen and (max-width: 600px) {
+    font-size:14px;
+    height:40px;
+}
   }
   textarea{
-    padding-top:15px;
+    padding-top:14px;
     height:281px;
-    font-size:20px;
+    font-size:18px;
     font-weight:300;
     background-color:#F6E2FF;
     border-radius:4px;
     border: solid 1px #0D0C0C;
     padding-left:2%;
+    @media only screen and (max-width: 600px) {
+    font-size:14px;
+    height:240px;
+    padding-top:10px;
+}
+  }
+  input[type=submit] {
+    background:#AD00FF;
+    border-radius:8px;
+    padding: 15px 70px;
+    font-size:20px;
+    border:none;
+    color:white;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background:#f5e0ff;
+        border:none;
+        color:#4a4949;
+        cursor:pointer;
     
+    }
   }
 `

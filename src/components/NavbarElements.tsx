@@ -68,13 +68,14 @@ export const NavBtn = styled.nav`
 }
 `
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled.button`
     border-radius:40px;
     background:none;
     border:solid 2px;
     padding: 8px 30px;
     color: #fff;
     outline:none;
+    font-size:16px;
     cursor:pointer;
     transition: all 0.2s ease-in-out;
     text-decoration:none;

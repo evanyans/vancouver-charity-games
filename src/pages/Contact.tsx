@@ -7,15 +7,15 @@ const Contact = () => {
   return (
     <Wrapper>
       <Body>
-        <Title>Contact</Title>
-        <Form>
+        <Title data-aos="fade-up">Contact</Title>
+        <Form data-aos="fade-up">
           <input type="text" placeholder="Name" required/>
           <input type="email" placeholder="Email" required/>
           <textarea rows={6} id="message" placeholder="Message" required></textarea>
           <input type="submit" value="Submit" />
         </Form>
       </Body>
-      <img className="vcg" src={vcg} alt="vcg" />
+      <img className="vcg" src={vcg} alt="vcg" data-aos="fade-left" />
     </Wrapper>
   )
 }

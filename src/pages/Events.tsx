@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import wonyoung from '../images/wonyoung.png';
 import { NavLink as Link } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import jet from '../images/jet.svg';
 const Events = () => {
 
   return (
@@ -11,7 +10,9 @@ const Events = () => {
       <Body >
         <Topic data-aos="fade-up">Events</Topic>
         <Title data-aos="fade-up">Current Events</Title>
+        
       </Body>
+      <img className="jet" src={jet} alt="jet"  />
       <Current data-aos="fade-up">
         <CardCur>
           <Image></Image>
@@ -56,16 +57,49 @@ export default Events;
 
 export const Wrapper = styled.div`
   background-color:#FBF0FF;
+  .jet{
+    position:absolute;
+    right:300px;
+    top:25px;
+    width:250px;
+    @media only screen and (max-width: 600px) {
+      display:none;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  display:none;
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  display:none;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  display:none;
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  display:flex;
+}
+  }
 `
 
 export const Body = styled.div`
   display:flex;
   flex-direction:column;
   background-color:#0D0C0C;
-  padding-left:100px;
   padding-top:80px;
   padding-right:100px;
   padding-bottom:60px;
+
+
+
   @media only screen and (max-width: 600px) {
     
     padding-left:5%;
@@ -76,8 +110,8 @@ export const Body = styled.div`
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  padding-left:100px;
-  padding-right:100px;
+  padding-left:15%;
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -162,7 +196,7 @@ export const Current = styled.div`
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  padding-left:100px;
+  padding-left:15%;
   padding-right:100px;
 }
 
@@ -271,7 +305,7 @@ export const PastTitle = styled.div`
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  padding-left:100px;
+  padding-left:15%;
   padding-right:100px;
 }
 
@@ -340,7 +374,7 @@ export const Past = styled.div`
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  padding-left:100px;
+  padding-left:15%;
   padding-right:100px;
 }
 

@@ -28,7 +28,7 @@ const Navbar = () => {
                     </NavLink>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/donate">Donate</NavBtnLink>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=DM8QBDKHVGUVG" target="_blank"><NavBtnLink>Donate</NavBtnLink></a>
                 </NavBtn>
             </Nav>
         </>

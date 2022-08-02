@@ -19,7 +19,7 @@ const Events = () => {
           <Tourn>2022 SUMMER LEAGUE OF LEGENDS TOURNAMENT</Tourn>
           <Date>AUG 15TH - 17TH, 12-3PM</Date>
           <Donate>PROCEEDS TO UNICEF</Donate>
-          <Register>Register Now</Register>
+          <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeo7b6DGC0ja79YbVNGNs9FcJwWaDHs5dLSO0xpP8_FL_duoQ/viewform" target ="_blank"><Register>Register Now</Register></a>
         </CardCur>
       </Current>
       <PastTitle>
@@ -32,7 +32,7 @@ const Events = () => {
           <Tourn>2021 WINTER LEAGUE OF LEGENDS TOURNAMENT</Tourn>
           <Date>DEC 27TH - 29TH, 12-3PM</Date>
           <Donate>PROCEEDS TO GREATER VANCOUVER FOOD BANK</Donate>
-          <NavLink to="/2021-summer-val">Learn More</NavLink>
+          <NavLink to="/">Learn More</NavLink>
         </CardCur>
         <CardCur data-aos="fade-up">
           <Image></Image>
@@ -46,7 +46,7 @@ const Events = () => {
           <Tourn>2021 SUMMER VALORANT TOURNAMENT</Tourn>
           <Date>JUL 30TH - AUG 1ST, 3-6PM</Date>
           <Donate>PROCEEDS TO BC CHILDREN'S HOSPITAL</Donate>
-          <NavLink to="/">Learn More</NavLink>
+          <NavLink to="/2021-summer-val">Learn More</NavLink>
         </CardCur>
       </Past>
     </Wrapper>
@@ -190,6 +190,9 @@ export const CardCur = styled.div`
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     display:flex;
     flex-direction:column;
+    a{
+      align-self:center;
+    }
 `
 
 export const Image = styled.div`

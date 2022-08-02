@@ -4,6 +4,7 @@ import CountUp from 'react-countup';
 import { NavLink as Link } from 'react-router-dom';
 
 const SummervalBCH = () => {
+
   return (
     <Wrapper>
       <Body data-aos="fade-up">
@@ -12,7 +13,7 @@ const SummervalBCH = () => {
         <Stats>
           <Money>$<CountUp end={265} duration={1} /><div className="sub">Money Raised</div></Money>
           <People><CountUp end={99} duration={1} /><div className = "sub">Participants</div></People>
-          <Sponsor>wtf<div className = "sub">Sponsor</div></Sponsor>
+          <Sponsor>BC Children's Hospital<div className = "sub">Donation</div></Sponsor>
         </Stats>
         <Winners>Winners</Winners>
         <List>
@@ -38,8 +39,6 @@ export const Wrapper = styled.div`
   display:flex;
   justify-content:center;
   padding-top: 7%;
-  padding-bottom:200px;
-
   @media only screen and (max-width: 600px) {
     padding-left:5%;
   padding-right:5%;
@@ -116,7 +115,7 @@ export const Stats = styled.div`
   display:flex;
   flex-direction: row;
   flex-wrap:wrap;
-  gap:12%;
+  gap:9%;
   font-weight:700;
   font-size:36px;
   .sub{

@@ -194,7 +194,7 @@ export const Rectangle = styled.div`
     max-width:1200px;
     height:900px;
     background: rgba(237, 223, 255,0.37);
-    z-index:-10;
+    z-index:-1;
 
     padding-top:4rem;
     padding-left:4rem;

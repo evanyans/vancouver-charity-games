@@ -16,6 +16,7 @@ const Footer = () => {
 export default Footer;
 
 export const Wrapper = styled.div`
+
     background:black;
     height:50px;
     z-index:999;
@@ -23,9 +24,8 @@ export const Wrapper = styled.div`
     padding-top:16px;
     padding-left:14px;
     padding-right:14px;
-
-    position:sticky;
-    top:100%;
+    margin-top:auto;
+    
 `
 
 export const Text = styled.div`

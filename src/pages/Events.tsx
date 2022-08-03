@@ -350,7 +350,7 @@ export const Text = styled.div`
 
 export const Line = styled.div`
       position:relative;
-    width:100%;
+    width:88%;
     height:2px;
     background-color:#C549FF;
     margin-top:10px;

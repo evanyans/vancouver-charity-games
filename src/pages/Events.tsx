@@ -157,7 +157,7 @@ export const Topic = styled.div`
 export const Title = styled.div`
   color:white;
   font-size:76px;
-  font-weight:800;
+  font-weight:700;
   @media only screen and (max-width: 600px) {
     font-size:30px;
 }
@@ -325,7 +325,7 @@ export const PastTitle = styled.div`
 export const Text = styled.div`
     color:#0D0C0C;
   font-size:76px;
-  font-weight:800;
+  font-weight:700;
   @media only screen and (max-width: 600px) {
     font-size:26px;
 }

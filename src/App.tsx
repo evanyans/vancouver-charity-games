@@ -14,10 +14,10 @@ import ScrollToTop from './components/ScrollToTop';
 import Sponsor from './pages/Sponsor';
 
 const App: FC = () => {
-
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
   }, []);
+  
 
 
 

@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import sombra from '../images/sombra.png';
+import vectorB from '../images/vectorB.svg'
 import wonyoung from '../images/wonyoung.png';
 import { AiFillLinkedin } from 'react-icons/ai';
 import vector from '../images/vector.png';
+import lines from '../images/lines.svg';
 
 const About = () => {
 
@@ -11,11 +13,12 @@ const About = () => {
     <Wrapper>
 
       <Body>
+      <img className="vectorB" src={vectorB} alt="sombra" />
         <img className="vector" src={vector} alt="sombra" />
-        <Text>
-          <Topic data-aos="fade-up">About Us</Topic>
-          <Title data-aos="fade-up" >Who we are</Title>
-          <SubText data-aos="fade-up">Lorem ipsum dolor sit amet. Non voluptatem aperiam qui placeat quaerat non fugit beatae aut consequatur aperiam et fuga alias. Est velit labore 33 rerum rerum ut molestiae deleniti. Sed expedita earum non nulla velit ex eaque libero id debitis omnis. Ea placeat sequi eos facilis distinctio aut illo aliquam 33 veniam fugiat est sint dolorem ut nulla consequatur. Aut animi ipsam et nulla officiis At voluptates officiis est dolorem voluptatem et consequatur ipsum id autem natus et ducimus reprehenderit.
+        <Text data-aos="fade-up">
+          <Topic >About Us</Topic>
+          <Title >Who we are</Title>
+          <SubText>Lorem ipsum dolor sit amet. Non voluptatem aperiam qui placeat quaerat non fugit beatae aut consequatur aperiam et fuga alias. Est velit labore 33 rerum rerum ut molestiae deleniti. Sed expedita earum non nulla velit ex eaque libero id debitis omnis. Ea placeat sequi eos facilis distinctio aut illo aliquam 33 veniam fugiat est sint dolorem ut nulla consequatur. Aut animi ipsam et nulla officiis At voluptates officiis est dolorem voluptatem et consequatur ipsum id autem natus et ducimus reprehenderit.
             At aliquid quos quo odit iure cum nisi delectus et distinctio ipsum et debitis saepe rem tenetur tenetur eum fuga voluptatibus.</SubText>
 
         </Text>
@@ -23,50 +26,51 @@ const About = () => {
       </Body>
       <Team>
         <TitleText data-aos="fade-down">Our Team</TitleText>
-        <Cards data-aos="fade-down">
-          <Card >
+        <Cards>
+          <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
-          <Card >
+          <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
-          <Card>
+          <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
-          <Card>
+          <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
-          <Card>
+          <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
-          <Card>
+          <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
-          <Card>
+          <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Jang Wonyoung</Name>
             <Position>Lead Organizer</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
         </Cards>
+        <img className="lines" src={lines} alt="sombra" />
       </Team>
     </Wrapper>
 
@@ -87,6 +91,13 @@ export const Team = styled.div`
   flex-direction:column;
   align-items:center;
   z-index:9;
+  .lines{
+    position:absolute;
+    width:800px;
+    z-index:-1;
+    left:-160px;
+    top:75rem;
+  }
 
 `
 
@@ -150,7 +161,7 @@ export const Position = styled.div`
 export const TitleText = styled.div`
   font-weight:700;
   font-size:64px;
-  padding-top:40px;
+  padding-top:20px;
   padding-bottom:40px;
   @media only screen and (max-width: 600px) {
   font-size:40px;
@@ -178,44 +189,75 @@ export const Body = styled.div`
 background:#0D0C0C;
 display:flex;
 flex-direction:row;
-.vector{
+.vectorB{
   position:absolute;
+  right:20rem;
   width:500px;
-  top:38rem;
-  left:-10rem;
+  top:-160px;
   @media only screen and (max-width: 600px) {
   display:none;
 
 }
 
 @media only screen and (min-width: 600px) {
+  display:none;
+
+}
+
+@media only screen and (min-width: 768px) {
+  display:none;
+
+}
+
+@media only screen and (min-width: 992px) {
+  display:none;
+}
+@media only screen and (min-width: 1200px) {
+  display:block;
+}
+
+}
+.vector{
+  position:absolute;
+  width:500px;
+  top:38rem;
+  left:0rem;
+  @media only screen and (max-width: 600px) {
+  display:none;
+
+}
+
+@media only screen and (min-width: 600px) {
+  display:none;
   width:300px;
   top:55rem;
 }
 
 @media only screen and (min-width: 768px) {
+  display:none;
   width:300px;
   top:40rem;
 }
 
 @media only screen and (min-width: 992px) {
-  width:400px;
-  top:38rem;
+  display:none;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  width:400px;
-  top:40rem;
+  width:500px;
+  top:47rem;
+  display:block;
 }
 }
 .sombra{
-  display:block;
-  max-height:300px;
+  display:inline-block;
+  max-height:400px;
   height:auto;
   width:auto;
   align-self:flex-end;
-  padding-right:300px;
+  position:relative;
+  right:150px;
   
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -240,7 +282,7 @@ flex-direction:row;
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  display:block;
+  display:inline-block;
 }
 }`
 
@@ -313,7 +355,7 @@ export const Topic = styled.div`
 export const Title = styled.div`
   color:white;
   font-size:86px;
-  font-weight:800;
+  font-weight:700;
   @media only screen and (max-width: 600px) {
   font-size:46px;
 }
@@ -340,10 +382,11 @@ export const SubText = styled.div`
   color:white;
   font-size:20px;
   font-weight:300;
-  padding-top:20px;
+  line-height:2.5rem;
   @media only screen and (max-width: 600px) {
   font-size:16px;
-  padding-top:5px;
+  padding-top:0px;
+  line-height:2rem;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -361,6 +404,6 @@ export const SubText = styled.div`
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   font-size:20px;
-  padding-top:20px;
+  padding-top:0px;
 }
 `

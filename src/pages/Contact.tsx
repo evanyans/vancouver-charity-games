@@ -62,7 +62,7 @@ export const Body = styled.div`
 `
 
 export const Title = styled.div`
-  font-weight:800;
+  font-weight:700;
   color:#0D0C0C;
   font-size:66px;
   padding-bottom:15px;

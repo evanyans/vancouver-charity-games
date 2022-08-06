@@ -48,6 +48,7 @@ export const Body = styled.div`
 align-self:center;
   max-width:910px;
   font-size:20px;
+  line-height:2rem;
 `
 
 export const SponsorP = styled.button`

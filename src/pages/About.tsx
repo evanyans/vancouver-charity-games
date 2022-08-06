@@ -96,7 +96,7 @@ export const Team = styled.div`
     width:800px;
     z-index:-1;
     left:-160px;
-    top:75rem;
+    top:74rem;
   }
 
 `
@@ -374,7 +374,7 @@ export const Title = styled.div`
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  font-size:76px;
+  font-size:66px;
 }
 `
 
@@ -403,7 +403,7 @@ export const SubText = styled.div`
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  font-size:20px;
+  font-size:18px;
   padding-top:0px;
 }
 `

@@ -298,7 +298,8 @@ export const Text = styled.div`
 @media only screen and (max-width: 600px) {
   padding-top:30px;
   padding-bottom:60px;
-  padding-left:50px;
+  padding-left:5%;
+  padding-right:5%;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -384,9 +385,9 @@ export const SubText = styled.div`
   font-weight:300;
   line-height:2.5rem;
   @media only screen and (max-width: 600px) {
-  font-size:16px;
-  padding-top:0px;
-  line-height:2rem;
+  font-size:14px;
+  padding-top:5px;
+  line-height:1.6rem;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

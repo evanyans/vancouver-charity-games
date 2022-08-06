@@ -20,12 +20,13 @@ const Navbar = () => {
                     <NavLink to="/events">
                         Events
                     </NavLink>
-                    <NavLink to="/contact">
-                        Contact
-                    </NavLink>
                     <NavLink to="/sponsor">
                         Sponsor
                     </NavLink>
+                    <NavLink to="/contact">
+                        Contact
+                    </NavLink>
+
                 </NavMenu>
                 <NavBtn>
                     <a href="https://www.paypal.com/donate/?hosted_button_id=DM8QBDKHVGUVG" target="_blank"><NavBtnLink>Donate</NavBtnLink></a>

@@ -12,6 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTop from './components/ScrollToTop';
 import Sponsor from './pages/Sponsor';
+import HomeV2 from './pages/HomeV2';
 
 const App: FC = () => {
   useEffect(() => {
@@ -27,7 +28,7 @@ const App: FC = () => {
         <ScrollToTop />
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomeV2 />} />
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />

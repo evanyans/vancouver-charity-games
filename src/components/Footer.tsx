@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaDiscord } from 'react-icons/fa'
+import { BsInstagram } from 'react-icons/bs'
+import { AiFillFacebook } from 'react-icons/ai';
 
 const Footer = () => {
     return (
@@ -7,7 +10,11 @@ const Footer = () => {
             <Text>
                 <div className="left">© 2022 Vancouver Charity Games.</div>
                 <div className="center">Built & Designed by Evan Yan</div>
-                <div className="right">what</div>
+                <div className="right">
+                    <a href="https://www.instagram.com/vancharitygames/" target="_blank"><BsInstagram size={18}/></a>
+                    <a href="https://discord.gg/K8Ax5vQKEZ" target="_blank"><Discord size={20} /></a>
+                    <a href="https://www.facebook.com/vancharitygames/?locale=ne_NP" target="_blank"><AiFillFacebook size={20}/></a>
+                </div>
             </Text>
         </Wrapper>
     )
@@ -51,6 +58,13 @@ export const Text = styled.div`
         float: left;
         width:33.33333%;
         text-align:right;
+        a{
+            text-decoration:none;
+            color:white;
+
+        }
+
+
     }
     @media only screen and (max-width: 600px) {
     font-size:10px;
@@ -58,4 +72,9 @@ export const Text = styled.div`
 
 
     
+`
+
+export const Discord = styled(FaDiscord)`
+    margin-right:3%;
+    margin-left:3%;
 `

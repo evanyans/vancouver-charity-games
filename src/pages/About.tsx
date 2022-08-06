@@ -41,31 +41,31 @@ const About = () => {
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Greg __</Name>
+            <Name>Greg Eun</Name>
             <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Josh __</Name>
+            <Name>Josh Peng</Name>
             <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Ryan B__</Name>
+            <Name>Ryan Busch</Name>
             <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Ryan C__</Name>
+            <Name>Ryan Chong</Name>
             <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Olivia __</Name>
+            <Name>Olivia Wu</Name>
             <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
@@ -96,7 +96,7 @@ export const Team = styled.div`
     width:800px;
     z-index:-1;
     left:-160px;
-    top:73rem;
+    top:69rem;
   }
 
 `
@@ -106,16 +106,16 @@ display:flex;
 flex-direction:row;
 flex-wrap:wrap;
 gap:32px;
+
 justify-content:center;
 padding-bottom:100px;
-padding-left:150px;
-padding-right:150px;
+max-width:1300px;
 `
 
 export const Card = styled.span`
     position:relative;
-    width:311px;
-    height:404px;
+    width:270px;
+    height:370px;
     background-color:#F6E2FF;
     border-radius:25px;
     border: solid 1px #0D0C0C;
@@ -123,19 +123,18 @@ export const Card = styled.span`
     display:flex;
     flex-direction:column;
     padding-top:20px;
-    
 
     img{
       align-self:center;
-      width:234px;
-      height:234px;
+      width:200px;
+      height:200px;
       border-radius:50%;
       border: solid 1px #0D0C0C;
     }
     a{
       color:#0D0C0C;
       text-decoration:none;
-      padding-left:40px;
+      padding-left:30px;
       padding-top:20px;
       width:21px;
       height:21px;
@@ -147,13 +146,13 @@ export const Card = styled.span`
 
 export const Name = styled.div`
   padding-top:20px;
-  padding-left:40px;
+  padding-left:30px;
   font-weight:700;
   font-size:24px;
 `
 
 export const Position = styled.div`
-  padding-left:40px;
+  padding-left:30px;
   font-size:16px;
   font-style:italic;
 `

@@ -8,7 +8,15 @@ import styled from 'styled-components';
 import CountUp from 'react-countup';
 
 const Home = () => {
-
+/*
+    <Arrows>
+    <div className="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</Arrows>
+*/
     return (
         <Wrapper>
             <img className="gamer" src={gamers} alt="gamers" />
@@ -27,13 +35,9 @@ const Home = () => {
                         <div className="subtext">Participants</div>
                     </Players>
                 </Stats>
-                <Arrows>
-                    <div className="arrow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </Arrows>
+                
+
+                
             </Head>
             <Body>
                 <Shapes>
@@ -123,6 +127,7 @@ export const Register = styled.button`
     }
     @media screen and (max-width: 600px) {
         margin-top:40px;
+        transition: all 0.2s ease-in-out;
     }
 
 `

@@ -6,13 +6,24 @@ import foodbank from '../images/foodbank.png';
 import redcross from '../images/redcross.png';
 import hospital from '../images/hospital.png';
 import { NavLink as Link } from 'react-router-dom';
+import WidgetBot from '@widgetbot/react-embed'
 const HomeV2 = () => {
+    /*
+    <Arrows>
+    <div className="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</Arrows>
+*/
     return (
+
         <Wrapper>
             <Title >
                 <TitleText data-aos="fade-up">Vancouver <div className="gradient">Charity</div> Games</TitleText>
                 <SubText data-aos="fade-up">Current: 2022 Summer League of Legends Tournament<br></br>August 5th-7th, 12-3PM PST</SubText>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7b6DGC0ja79YbVNGNs9FcJwWaDHs5dLSO0xpP8_FL_duoQ/viewform" target="_blank"><Register data-aos="fade-up">Register Now</Register></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7b6DGC0ja79YbVNGNs9FcJwWaDHs5dLSO0xpP8_FL_duoQ/viewform" target="_blank"><Register>Register Now</Register></a>
                 <Stats data-aos="fade-up">
                     <Charity>
                         $<CountUp end={600} duration={1.2} />+
@@ -24,19 +35,22 @@ const HomeV2 = () => {
                         <div className="subtext">Participants</div>
                     </Players>
                 </Stats>
-                <Arrows>
-                    <div className="arrow">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </Arrows>
+
             </Title>
+            <Bot>
+                <WidgetBot
+                    server="856333893765693490"
+                    channel="859998756355440640"
+                    height={500}
+                    width={1100}
+                />
+            </Bot>
             <Sub>
-                <Text data-aos="fade-up">
+
+                <Text >
                     <Topic >What we do</Topic>
                     <Cause >Game for a Cause</Cause>
-                    <BodyText data-aos="fade-up">Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments.
+                    <BodyText>Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments.
                         <br></br><br></br>
                         Our group of organizers know all too well the power video games have on bringing people of countless backgrounds together in the name of a shared interest: from the countless attendees at eSports competitions to its growing usage in education, video games continue to grow in popularity and application today with no evidence of stopping.
                         <br></br><br></br>
@@ -46,13 +60,13 @@ const HomeV2 = () => {
                     <NavLink to="/about">About Us &gt; </NavLink>
                 </Text>
                 <Boxes>
-                    <Donate data-aos="fade-left">
+                    <Donate >
                         <ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA>
                     </Donate>
-                    <Donate data-aos="fade-left">
+                    <Donate >
                         <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
                     </Donate >
-                    <Donate data-aos="fade-left"><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
+                    <Donate ><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
                 </Boxes>
             </Sub>
         </Wrapper>
@@ -210,19 +224,23 @@ export const Text = styled.div`
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-top-left-radius:15px;
     border-top-right-radius:15px;
-    max-width:900px;
+    max-width:690px;
     margin-left:auto;
     margin-right:auto;
     text-align:left;
     
     margin-top:4%;
     
-    padding-top:4%;
+    padding-top:3%;
     padding-left:4%;
     padding-right:165px;
     padding-bottom:10%;
     @media only screen and (max-width: 1607px) {
-    padding-right:4%;
+    padding-right:4%
+}
+
+@media only screen and (min-width: 1200px) {
+    padding-right:0px;
 }
 
 
@@ -304,6 +322,9 @@ export const Donate = styled.span`
 
     display:flex;
     flex-direction:row;
+    align-items:flex-start;
+
+
     @media only screen and (max-width: 1607px) {
     display:none;
 }
@@ -421,4 +442,10 @@ export const Arrows = styled.div`
 @media only screen and (min-width: 600px) {
 font-size:19px;
 }
+`
+
+export const Bot = styled.div`
+    display:flex;
+    justify-content:center;
+    padding-top:30px;
 `

@@ -82,8 +82,11 @@ export const TitleText = styled.div`
     max-width:600px;
     margin-left:auto;
     margin-right:auto;
+    
 @media only screen and (max-width: 600px) {
     font-size:40px;
+    margin-left:6%;
+    margin-right:6%;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -98,6 +101,8 @@ export const SubText = styled.div`
     margin-top:10px;
     font-size:18px;
     font-weight:300;
+    margin-left:6%;
+    margin-right:6%;
     
 @media only screen and (max-width: 600px) {
     font-size:15px;
@@ -363,6 +368,7 @@ export const Events = styled.button`
     text-decoration:none;
     font-weight:500;
     transition: all 0.2s ease-in-out;
+    margin-bottom:5%;
     &:hover {
         transition: all 0.2s ease-in-out;
         background:#C549FF;

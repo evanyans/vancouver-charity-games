@@ -96,7 +96,7 @@ export const Team = styled.div`
     width:800px;
     z-index:-1;
     left:-160px;
-    top:74rem;
+    top:73rem;
   }
 
 `

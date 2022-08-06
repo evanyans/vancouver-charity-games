@@ -9,11 +9,11 @@ import { NavLink as Link } from 'react-router-dom';
 const HomeV2 = () => {
     return (
         <Wrapper>
-            <Title>
-                <TitleText>Vancouver <div className="gradient">Charity</div> Games</TitleText>
-                <SubText>Current: 2022 Summer League of Legends Tournament<br></br>August 5th-7th, 12-3PM PST</SubText>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7b6DGC0ja79YbVNGNs9FcJwWaDHs5dLSO0xpP8_FL_duoQ/viewform" target="_blank"><Register>Register Now</Register></a>
-                <Stats>
+            <Title >
+                <TitleText data-aos="fade-up">Vancouver <div className="gradient">Charity</div> Games</TitleText>
+                <SubText data-aos="fade-up">Current: 2022 Summer League of Legends Tournament<br></br>August 5th-7th, 12-3PM PST</SubText>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7b6DGC0ja79YbVNGNs9FcJwWaDHs5dLSO0xpP8_FL_duoQ/viewform" target="_blank"><Register data-aos="fade-up">Register Now</Register></a>
+                <Stats data-aos="fade-up">
                     <Charity>
                         $<CountUp end={600} duration={1.2} />+
                         <div className="subtext">Raised for Charity</div>
@@ -33,7 +33,7 @@ const HomeV2 = () => {
                 </Arrows>
             </Title>
             <Sub>
-                <Text>
+                <Text data-aos="fade-up">
                     <Topic>What we do</Topic>
                     <Cause>Game for a Cause</Cause>
                     <BodyText>Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments.
@@ -46,13 +46,13 @@ const HomeV2 = () => {
                     <NavLink to="/about">About Us &gt; </NavLink>
                 </Text>
                 <Boxes>
-                    <Donate>
+                    <Donate data-aos="fade-left">
                         <ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA>
                     </Donate>
-                    <Donate>
+                    <Donate data-aos="fade-left">
                         <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
-                    </Donate>
-                    <Donate><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
+                    </Donate >
+                    <Donate data-aos="fade-left"><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
                 </Boxes>
             </Sub>
         </Wrapper>

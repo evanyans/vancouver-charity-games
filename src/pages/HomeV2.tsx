@@ -38,11 +38,11 @@ const HomeV2 = () => {
 
             </Title>
             <Bot>
-                <WidgetBot
+                <Discord
                     server="856333893765693490"
                     channel="859998756355440640"
                     height={500}
-                    width={1100}
+                    width={1115}
                 />
             </Bot>
             <Sub>
@@ -323,7 +323,11 @@ export const Donate = styled.span`
     display:flex;
     flex-direction:row;
     align-items:flex-start;
-
+    transition: all 0.2s ease-in-out;
+&:hover{
+    transition: all 0.2s ease-in-out;
+    background-color:#ddffff;
+}
 
     @media only screen and (max-width: 1607px) {
     display:none;
@@ -448,4 +452,18 @@ export const Bot = styled.div`
     display:flex;
     justify-content:center;
     padding-top:30px;
+`
+
+export const Discord = styled(WidgetBot)`
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    position:relative;
+    top:0;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        position:relative;
+        top:-15px;
+}
 `

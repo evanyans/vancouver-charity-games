@@ -6,11 +6,11 @@ const Navbar = () => {
     return (
         <>
             <Nav>
+                <Bars />
+                <NavMenu>
                 <NavLink to="/">
                     <img src={logo} alt="Logo" width="72px" height="72px" />
                 </NavLink>
-                <Bars />
-                <NavMenu>
                     <NavLink to="/" >
                         Home
                     </NavLink>

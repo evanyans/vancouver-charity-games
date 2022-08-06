@@ -51,7 +51,7 @@ align-items:center;
 margin-right: -24px;
 font-weight:500;
 font-size:18px;
-gap:2rem;
+gap:3.5rem;
 
 @media screen and (max-width: 1024px) {
     display:none;
@@ -61,7 +61,7 @@ gap:2rem;
 export const NavBtn = styled.nav`
     display:flex;
     align-items:center;
-    margin-right:24px;
+    margin-right:-50px;
 
 @media screen and (max-width:1024px) {
     display:none;

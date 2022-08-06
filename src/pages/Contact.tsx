@@ -81,6 +81,7 @@ export const Form = styled.form`
   gap:.75rem;
   width:85%;
   max-width:504px;
+  
   input[type=text]{
     height:53px;
     font-size:18px;
@@ -89,6 +90,7 @@ export const Form = styled.form`
     border-radius:4px;
     border: solid 1px #0D0C0C;
     padding-left:2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     @media only screen and (max-width: 600px) {
     font-size:14px;
     height:40px;
@@ -103,6 +105,7 @@ export const Form = styled.form`
     border-radius:4px;
     border: solid 1px #0D0C0C;
     padding-left:2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     @media only screen and (max-width: 600px) {
     font-size:14px;
     height:40px;
@@ -117,6 +120,7 @@ export const Form = styled.form`
     border-radius:4px;
     border: solid 1px #0D0C0C;
     padding-left:2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     @media only screen and (max-width: 600px) {
     font-size:14px;
     height:240px;
@@ -131,12 +135,14 @@ export const Form = styled.form`
     border:none;
     color:white;
     transition: all 0.2s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     &:hover {
         transition: all 0.2s ease-in-out;
         background:#f5e0ff;
         border:none;
         color:#4a4949;
         cursor:pointer;
+        box-shadow:none;
     
     }
   }

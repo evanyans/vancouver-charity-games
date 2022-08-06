@@ -34,9 +34,9 @@ const HomeV2 = () => {
             </Title>
             <Sub>
                 <Text data-aos="fade-up">
-                    <Topic>What we do</Topic>
-                    <Cause>Game for a Cause</Cause>
-                    <BodyText>Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments.
+                    <Topic >What we do</Topic>
+                    <Cause >Game for a Cause</Cause>
+                    <BodyText data-aos="fade-up">Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments.
                         <br></br><br></br>
                         Our group of organizers know all too well the power video games have on bringing people of countless backgrounds together in the name of a shared interest: from the countless attendees at eSports competitions to its growing usage in education, video games continue to grow in popularity and application today with no evidence of stopping.
                         <br></br><br></br>
@@ -73,7 +73,7 @@ export const Title = styled.div`
     text-align:center;
     color:white;
     padding-top:80px;
-    padding-bottom:140px;
+    padding-bottom:160px;
 `
 
 export const TitleText = styled.div`

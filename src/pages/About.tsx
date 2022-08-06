@@ -29,44 +29,44 @@ const About = () => {
         <Cards>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Jang Wonyoung</Name>
-            <Position>Lead Organizer</Position>
+            <Name>James Shi</Name>
+            <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Jang Wonyoung</Name>
-            <Position>Lead Organizer</Position>
+            <Name>Edmund Jiang</Name>
+            <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Jang Wonyoung</Name>
-            <Position>Lead Organizer</Position>
+            <Name>Greg __</Name>
+            <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Jang Wonyoung</Name>
-            <Position>Lead Organizer</Position>
+            <Name>Josh __</Name>
+            <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Jang Wonyoung</Name>
-            <Position>Lead Organizer</Position>
+            <Name>Ryan B__</Name>
+            <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Jang Wonyoung</Name>
-            <Position>Lead Organizer</Position>
+            <Name>Ryan C__</Name>
+            <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
-            <Name>Jang Wonyoung</Name>
-            <Position>Lead Organizer</Position>
+            <Name>Olivia __</Name>
+            <Position>position</Position>
             <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
           </Card>
         </Cards>

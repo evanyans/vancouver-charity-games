@@ -61,10 +61,10 @@ const HomeV2 = () => {
             </Mark>
             <Sub>
 
-                <Text >
+                <Text data-aos="fade-up">
                     <Topic >What we do</Topic>
                     <Cause >Game for a Cause</Cause>
-                    <BodyText>Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments.
+                    <BodyText >Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments.
                         <br></br><br></br>
                         Our group of organizers know all too well the power video games have on bringing people of countless backgrounds together in the name of a shared interest: from the countless attendees at eSports competitions to its growing usage in education, video games continue to grow in popularity and application today with no evidence of stopping.
                         <br></br><br></br>
@@ -76,8 +76,8 @@ const HomeV2 = () => {
                 <Discord
                     server="856333893765693490"
                     channel="859998756355440640"
-                    height={800}
-                    width={800}
+                    height={750}
+                    width={1200}
                 />
 
             </Sub>
@@ -101,6 +101,44 @@ export const Title = styled.div`
     color:white;
     padding-top:80px;
     padding-bottom:110px;
+`
+export const Sub = styled.div`
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+
+
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1700px;
+    @media only screen and (max-width: 600px) {
+        margin-left:0;
+    margin-right:0;
+        flex-wrap:wrap;
+        
+}
+
+@media only screen and (min-width: 600px) {
+    margin-left:0;
+    margin-right:0;
+    flex-wrap:wrap;
+}
+
+@media only screen and (min-width: 768px) {
+    margin-left:0;
+    margin-right:0;
+    flex-wrap:wrap;
+}
+
+@media only screen and (min-width: 992px) {
+    flex-wrap:wrap;
+    margin-left:0;
+    margin-right:0;
+}
+
+@media only screen and (min-width: 1200px) {
+    flex-wrap:nowrap;
+}
 `
 
 export const TitleText = styled.div`
@@ -227,12 +265,7 @@ export const Players = styled.div`
 
 `
 
-export const Sub = styled.div`
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    align-items:center;
-`
+
 
 export const Text = styled.div`
     background: rgba(237, 223, 255,0.37);
@@ -247,14 +280,31 @@ export const Text = styled.div`
     
     padding-top:2%;
     padding-left:4%;
-    padding-right:165px;
+    padding-right:6%;
     padding-bottom:10%;
-    @media only screen and (max-width: 1607px) {
-    padding-right:4%
+@media only screen and (max-width: 600px) {
+        margin-left:auto;
+        margin-right:auto;
+}
+
+@media only screen and (min-width: 600px) {
+    margin-left:auto;
+        margin-right:auto;
+        max-width:100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
 }
 
 @media only screen and (min-width: 1200px) {
-    padding-right:4%;
+    margin-right:auto;
+    margin-left:15%;
+    max-width:740px;
 }
 
 
@@ -452,18 +502,52 @@ font-size:19px;
 
 
 export const Discord = styled(WidgetBot)`
+display:flex;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     margin-left:auto;
     margin-right:auto;
     position:relative;
-    top:0;
-    right:5%;
+    top:-50px;
+    right:3%;
     transition: all 0.2s ease-in-out;
     
     &:hover{
         transition: all 0.2s ease-in-out;
         position:relative;
-        top:-15px;
+        top:-60px;
+}
+@media only screen and (max-width: 600px) {
+    right:0;
+    top:-10px;
+    margin: 0 2%;
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        position:relative;
+        top:-20px;
+}
+}
+
+@media only screen and (min-width: 600px) {
+right:0;
+top:-10px;
+margin: 0 2%;
+&:hover{
+        transition: all 0.2s ease-in-out;
+        position:relative;
+        top:-20px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+    right:3%
 }
 `
 

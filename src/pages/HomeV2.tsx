@@ -74,6 +74,7 @@ const HomeV2 = () => {
                     <NavLink to="/about">About Us &gt; </NavLink>
                 </Text>
                 <Discord
+                    className ="gradient-border"
                     server="856333893765693490"
                     channel="859998756355440640"
                     height={750}
@@ -503,14 +504,30 @@ font-size:19px;
 
 export const Discord = styled(WidgetBot)`
 display:flex;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+box-shadow: rgba(240, 46, 170, 0.6) 5px 5px, rgba(240, 46, 170, 0.5) 5px 5px, rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     margin-left:auto;
+    border-color: var(--gradient);
     margin-right:auto;
     position:relative;
-    top:-50px;
+    top:-1500px;
     right:3%;
     transition: all 0.2s ease-in-out;
     
+    --angle: 0deg;
+    border: 4px solid;
+  border-image: linear-gradient(var(--angle), #12c2e9, #c471ed, #f64f59) 1;
+  animation: 5s rotate linear infinite;
+  @keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
     &:hover{
         transition: all 0.2s ease-in-out;
         position:relative;
@@ -521,7 +538,7 @@ display:flex;
     top:-10px;
     margin: 0 2%;
     &:hover{
-        transition: all 0.2s ease-in-out;
+        transition: top 0.2s ease-in-out;
         position:relative;
         top:-20px;
 }
@@ -529,12 +546,12 @@ display:flex;
 
 @media only screen and (min-width: 600px) {
 right:0;
-top:-10px;
+top:-50px;
 margin: 0 2%;
 &:hover{
-        transition: all 0.2s ease-in-out;
+        transition: top 0.2s ease-in-out;
         position:relative;
-        top:-20px;
+        top:-60px;
 }
 }
 

@@ -104,6 +104,10 @@ body{
   }
 
 
+  
+  
+
+
 
 
 ::-webkit-scrollbar {
@@ -124,3 +128,4 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background-color: #595d5e;
   }
+

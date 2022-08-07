@@ -6,14 +6,14 @@ import wonyoung from '../images/wonyoung.png';
 import { AiFillLinkedin } from 'react-icons/ai';
 import vector from '../images/vector.png';
 import lines from '../images/lines.svg';
-
+import { BsDiscord } from 'react-icons/bs'
 const About = () => {
 
   return (
     <Wrapper>
 
       <Body>
-      <img className="vectorB" src={vectorB} alt="sombra" />
+        <img className="vectorB" src={vectorB} alt="sombra" />
         <img className="vector" src={vector} alt="sombra" />
         <Text data-aos="fade-up">
           <Topic >About Us</Topic>
@@ -31,7 +31,11 @@ const About = () => {
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>James Shi</Name>
             <Position>position</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+            <Icons>
+              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+
+              <Discord className="discord" size={28} />
+            </Icons>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
@@ -134,12 +138,11 @@ export const Card = styled.span`
     a{
       color:#0D0C0C;
       text-decoration:none;
-      padding-left:30px;
-      padding-top:20px;
-      width:21px;
-      height:21px;
+      
+      transition: all ease-in-out .2s;
       &:hover{
-        color:#C549FF;
+        transition: all ease-in-out .2s;
+        color: #0A66C2;
       }
       }
 `
@@ -407,3 +410,21 @@ export const SubText = styled.div`
   padding-top:0px;
 }
 `
+
+export const Icons = styled.div`
+
+display:flex;
+flex-direction:row;
+align-items:center;
+  padding-top:20px;
+  padding-left:30px;
+  gap:.5rem;
+
+`
+
+export const Discord = styled(BsDiscord)`
+&:hover{
+  color:#7289da;
+}
+`
+

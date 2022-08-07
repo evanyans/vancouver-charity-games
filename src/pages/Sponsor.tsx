@@ -111,6 +111,7 @@ display:flex;
   align-self:flex-start;
   .mystery{
     width:200px;
+    height:200px;
   }
 `
 

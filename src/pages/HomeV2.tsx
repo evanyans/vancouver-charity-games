@@ -7,6 +7,8 @@ import redcross from '../images/redcross.png';
 import hospital from '../images/hospital.png';
 import { NavLink as Link } from 'react-router-dom';
 import WidgetBot from '@widgetbot/react-embed'
+import Marquee from "react-fast-marquee";
+
 const HomeV2 = () => {
     /*
     <Arrows>
@@ -16,7 +18,17 @@ const HomeV2 = () => {
         <span></span>
     </div>
 </Arrows>
+                <Boxes>
+                    <Donate >
+                        <ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA>
+                    </Donate>
+                    <Donate >
+                        <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
+                    </Donate >
+                    <Donate ><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
+                </Boxes>
 */
+
     return (
 
         <Wrapper>
@@ -37,14 +49,16 @@ const HomeV2 = () => {
                 </Stats>
 
             </Title>
-            <Bot>
-                <Discord
-                    server="856333893765693490"
-                    channel="859998756355440640"
-                    height={500}
-                    width={1115}
-                />
-            </Bot>
+            <Mark gradient={false }gradientColor={[88,83,94]} speed={200} >
+                <Donate >
+                    <ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA>
+                </Donate>
+                <Donate >
+                    <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
+                </Donate >
+                <Donate ><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
+                
+            </Mark>
             <Sub>
 
                 <Text >
@@ -59,15 +73,13 @@ const HomeV2 = () => {
                     <Link to="/events"><Events>View Events &gt;</Events></Link>
                     <NavLink to="/about">About Us &gt; </NavLink>
                 </Text>
-                <Boxes>
-                    <Donate >
-                        <ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA>
-                    </Donate>
-                    <Donate >
-                        <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
-                    </Donate >
-                    <Donate ><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
-                </Boxes>
+                <Discord
+                    server="856333893765693490"
+                    channel="859998756355440640"
+                    height={800}
+                    width={800}
+                />
+
             </Sub>
         </Wrapper>
     )
@@ -76,7 +88,8 @@ const HomeV2 = () => {
 export default HomeV2
 
 export const Wrapper = styled.div`
-    
+    display:flex;
+    flex-direction:column;
 `
 
 export const Title = styled.div`
@@ -87,7 +100,7 @@ export const Title = styled.div`
     text-align:center;
     color:white;
     padding-top:80px;
-    padding-bottom:160px;
+    padding-bottom:110px;
 `
 
 export const TitleText = styled.div`
@@ -217,6 +230,8 @@ export const Players = styled.div`
 export const Sub = styled.div`
     display:flex;
     flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
 `
 
 export const Text = styled.div`
@@ -225,13 +240,12 @@ export const Text = styled.div`
     border-top-left-radius:15px;
     border-top-right-radius:15px;
     max-width:690px;
-    margin-left:auto;
+    margin-left:15%;
     margin-right:auto;
     text-align:left;
     
-    margin-top:4%;
     
-    padding-top:3%;
+    padding-top:2%;
     padding-left:4%;
     padding-right:165px;
     padding-bottom:10%;
@@ -240,7 +254,7 @@ export const Text = styled.div`
 }
 
 @media only screen and (min-width: 1200px) {
-    padding-right:0px;
+    padding-right:4%;
 }
 
 
@@ -248,13 +262,7 @@ export const Text = styled.div`
 
 export const Boxes = styled.div`
     display:flex;
-    flex-direction:column;
-    gap:1rem;
-    
-    position:relative;
-    right:300px;
-    margin-top:100px;
-
+    flex-direction:row;
 `
 
 export const Topic = styled.div`
@@ -308,34 +316,26 @@ export const BodyText = styled.div`
 
 export const Donate = styled.span`
 
-    width:430px;
     height:130px;
     border-radius:10px;
     background-color:white;
-    border: solid 1px #0D0C0C;
     
-    position:relative;
-    left:-80px;
-    top:100px;
-
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    
     display:flex;
     flex-direction:row;
     align-items:flex-start;
     transition: all 0.2s ease-in-out;
+
+    margin: 0 80px;
+    margin-top:20px;
+    width:90%;
 &:hover{
     transition: all 0.2s ease-in-out;
     background-color:#ddffff;
 }
 
-    @media only screen and (max-width: 1607px) {
-    display:none;
-}
-
-@media only screen and (min-width: 1200px) {
-    flex-direction:row;
-}
 
 `
 
@@ -370,12 +370,14 @@ export const Circle = styled.span`
 `
 
 export const ContentText = styled.div`
-    margin-top:32px;
+    margin-top:40px;
     margin-left:20px;
+    padding-right:20px;
+    font-size:14px;
     color:#777777;
     span{
         font-weight:600;
-        font-size: 30px;
+        font-size: 20px;
         color:black;
     }
 
@@ -448,17 +450,14 @@ font-size:19px;
 }
 `
 
-export const Bot = styled.div`
-    display:flex;
-    justify-content:center;
-    padding-top:30px;
-`
 
 export const Discord = styled(WidgetBot)`
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
+    margin-left:auto;
+    margin-right:auto;
     position:relative;
     top:0;
+    right:5%;
     transition: all 0.2s ease-in-out;
     
     &:hover{
@@ -466,4 +465,12 @@ export const Discord = styled(WidgetBot)`
         position:relative;
         top:-15px;
 }
+`
+
+export const Mark = styled(Marquee)`
+padding-bottom:20px;
+margin-bottom:20px;
+display:flex;
+z-index:999;
+background-color:#FBF0FF;
 `

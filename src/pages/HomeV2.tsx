@@ -278,7 +278,7 @@ export const Text = styled.div`
     text-align:left;
     
     
-    padding-top:2%;
+    padding-top:4%;
     padding-left:4%;
     padding-right:6%;
     padding-bottom:10%;

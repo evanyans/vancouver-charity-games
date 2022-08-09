@@ -174,7 +174,7 @@ display:flex;
 export const CardText = styled.div`
   display:flex;
   flex-direction:column;
-  padding-left:5%;
+  padding-left:7%;
   text-align:left;
   a{
     text-decoration: underline;

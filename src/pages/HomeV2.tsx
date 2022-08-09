@@ -504,7 +504,7 @@ font-size:19px;
 
 export const Discord = styled(WidgetBot)`
 display:flex;
-box-shadow: rgba(240, 46, 170, 0.6) 5px 5px, rgba(240, 46, 170, 0.5) 5px 5px, rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     margin-left:auto;
     border-color: var(--gradient);
     margin-right:auto;

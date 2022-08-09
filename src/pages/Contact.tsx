@@ -15,7 +15,8 @@ const Contact = () => {
           <input type="submit" value="Submit" />
         </Form>
       </Body>
-      <img className="vcg" src={vcg} alt="vcg" data-aos="fade-left" />
+      <Image> <img className="vcg" src={vcg} alt="vcg" data-aos="fade-left" /></Image>
+     
     </Wrapper>
   )
 }
@@ -24,32 +25,32 @@ export default Contact
 
 export const Wrapper = styled.div`
 .vcg{
+  width:29%;
   position:absolute;
-  width:510px;
-  top:192px;
-  right:10%;
+  right:0;
+  top:15%;
   z-index:-10;
   @media only screen and (max-width: 600px) {
-  width:300px;
- top:494px;
- right:4%;
+    display:none;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  display:none;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  display:none;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  display:block;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  width:510px;
 }
 }
 `
@@ -146,4 +147,7 @@ export const Form = styled.form`
     
     }
   }
+`
+export const Image = styled.div`
+  padding-bottom:200px;
 `

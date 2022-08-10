@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import jet from '../images/jet.svg';
 import purple from '../eventimages/purple.png'
 import UNICEF from '../eventimages/UNICEF.png'
+import redcross from '../eventimages/redcross.png'
+import hospital from '../eventimages/hospital.png'
+import gcfb from '../eventimages/gcfb.png'
+
+
 
 const Events = () => {
 
@@ -11,13 +16,13 @@ const Events = () => {
   return (
     <Wrapper>
       <Body >
-        <Topic >Events</Topic>
-        <Title>Current Events</Title>
+        <Topic data-aos="fade-up">Events</Topic>
+        <Title data-aos="fade-up">Current Events</Title>
 
       </Body>
       <img className="jet" src={jet} alt="jet" />
       <Current>
-        <Card>
+        <Card data-aos="fade-up">
           <Image></Image>
           <Fields>
             <FirstLine>
@@ -33,23 +38,23 @@ const Events = () => {
           </Fields>
         </Card>
       </Current>
-      <PastTitle>
+      <PastTitle data-aos="fade-up">
         <Text >Past Events</Text>
         <Line></Line>
       </PastTitle>
-      <Past >
-      <Card>
+      <Past data-aos="fade-up">
+        <Card>
           <Image></Image>
           <Fields>
             <FirstLine>
-              <Date>27-29 Dec 2022</Date>
-              <Charity><img className="unicef" src={UNICEF} alt="jet" /></Charity>
+              <Date>27-29 Dec 2021</Date>
+              <Charity><img className="unicef" src={gcfb} alt="jet" /></Charity>
             </FirstLine>
             <Tag>League of Legends</Tag>
             <Tourny>2021 Winter Tournament</Tourny>
             <Bottom>
               <BottomText>Greater Vancouver Food Bank</BottomText>
-              <ArrowLink to="/">&#10230;</ArrowLink>
+              <ArrowLink to="/2021-winter-league">&#10230;</ArrowLink>
             </Bottom>
           </Fields>
         </Card>
@@ -58,13 +63,13 @@ const Events = () => {
           <Fields>
             <FirstLine>
               <Date>4-5 Sep 2021</Date>
-              <Charity><img className="unicef" src={UNICEF} alt="jet" /></Charity>
+              <Charity><img className="redcross" src={redcross} alt="jet" /></Charity>
             </FirstLine>
             <Tag>League of Legends</Tag>
             <Tourny>2021 Fall Tournament</Tourny>
             <Bottom>
               <BottomText>Canadian Red Cross</BottomText>
-              <ArrowLink to="/">&#10230;</ArrowLink>
+              <ArrowLink to="/2021-fall-league">&#10230;</ArrowLink>
             </Bottom>
           </Fields>
         </Card>
@@ -73,7 +78,7 @@ const Events = () => {
           <Fields>
             <FirstLine>
               <Date>30 Jul-1 Aug 2021</Date>
-              <Charity><img className="unicef" src={UNICEF} alt="jet" /></Charity>
+              <Charity><img className="hospital" src={hospital} alt="jet" /></Charity>
             </FirstLine>
             <Tag>Valorant</Tag>
             <Tourny>2021 Summer Tournament</Tourny>
@@ -133,6 +138,14 @@ export const Date = styled.div`
 export const Charity = styled.div`  
   .unicef{
     color:white;
+    width:100px;
+    height:auto;
+  }
+  .redcross{
+    width:100px;
+    height:auto;
+  }
+  .hospital{
     width:100px;
     height:auto;
   }
@@ -348,7 +361,7 @@ export const Current = styled.div`
   padding-top: 20px;
   padding-left:100px;
   padding-right:100px;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 
   @media only screen and (max-width: 600px) {
     justify-content:center;

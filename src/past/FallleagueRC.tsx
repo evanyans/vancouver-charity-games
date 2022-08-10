@@ -8,22 +8,21 @@ const SummervalBCH = () => {
   return (
     <Wrapper>
       <Body data-aos="fade-up">
-        <Topic>July 30th - August 1st</Topic>
-        <Title>2021 Summer Valorant Tournament</Title>
+        <Topic>September 4th - 5th</Topic>
+        <Title>2021 Fall League of Legends Tournament</Title>
         <Stats>
-          <Money>$<CountUp end={265} duration={1} /><div className="sub">Money Raised</div></Money>
+          <Money>$<CountUp end={185} duration={1} /><div className="sub">Money Raised</div></Money>
           <People><CountUp end={99} duration={1} /><div className = "sub">Participants</div></People>
-          <Sponsor>BC Children's Hospital<div className = "sub">Donation</div></Sponsor>
+          <Sponsor>Canadian Red Cross<div className = "sub">Donation</div></Sponsor>
         </Stats>
         <Winners>Winners</Winners>
         <List>
           <ul>
-            <li>HEAD HUNTER - Mark Sanda</li>
-            <li>yaoming - Bernard Liu</li>
-            <li>Scoliosis - Arteen Mohammadi</li>
-            <li>Shaquille ONeal - David Im</li>
-            <li>Kumiho - Brandon Choi</li>
-            <li>blossim - Joshua Peng</li>
+            <li>Sir Darklan - Danny Kuei</li>
+            <li>Mana Regen - Victor Vu</li>
+            <li>Tickle My Nuts - Andre Nguyen</li>
+            <li>Tokiko Zaizen - Ryan Shing</li>
+            <li>Dave Le Ratte - David Vu</li>
           </ul>
         </List>
         <NavLink to ="/events">Back &gt; </NavLink>

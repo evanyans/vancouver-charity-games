@@ -2,19 +2,28 @@ import React, { useState, useRef } from 'react'
 import styled from 'styled-components'
 import vcg from '../images/vcg.svg';
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
-  const form:any = useRef();
+
+  const [verified, setVerified] = useState(false)
+
+  function onChange(value:any) {
+    console.log("Captcha value:", value);
+    setVerified(true);
+  }
+
+  const form: any = useRef();
   function sendEmail(e: any) {
     e.preventDefault();
 
-    emailjs.sendForm('service_9iu1tgu','template_sm0v77s', form.current, 'FjbSoNl0p-eInw_Hd')
+    emailjs.sendForm('service_9iu1tgu', 'template_sm0v77s', form.current, 'FjbSoNl0p-eInw_Hd')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
-      e.target.reset()
+    e.target.reset()
   }
 
   return (
@@ -25,7 +34,11 @@ const Contact = () => {
           <input type="text" placeholder="Name" name="name" required />
           <input type="email" placeholder="Email" name="email" required />
           <textarea rows={6} id="message" placeholder="Message" name="message" required></textarea>
-          <input type="submit" value="Submit" />
+          <ReCAPTCHA
+            sitekey="6LedFmIhAAAAAKQJAu7UU4sKasS_rgZ_o1t_ArgI"
+            onChange={onChange}
+          />,
+          <input type="submit" value="Submit" disabled={!verified} />
         </Form>
       </Body>
       <Image> <img className="vcg" src={vcg} alt="vcg" data-aos="fade-left" /></Image>
@@ -145,6 +158,7 @@ export const Form = styled.form`
   }
   input[type=submit] {
     background:#AD00FF;
+    margin-top:-30px;
     border-radius:8px;
     padding: 15px 70px;
     font-size:20px;

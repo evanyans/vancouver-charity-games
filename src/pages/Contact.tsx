@@ -1,22 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import styled from 'styled-components'
 import vcg from '../images/vcg.svg';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const form:any = useRef();
+  function sendEmail(e: any) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_9iu1tgu','template_sm0v77s', form.current, 'FjbSoNl0p-eInw_Hd')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+      e.target.reset()
+  }
 
   return (
     <Wrapper>
       <Body>
         <Title data-aos="fade-up">Contact</Title>
-        <Form data-aos="fade-up">
-          <input type="text" placeholder="Name" required/>
-          <input type="email" placeholder="Email" required/>
-          <textarea rows={6} id="message" placeholder="Message" required></textarea>
+        <Form ref={form} data-aos="fade-up" onSubmit={sendEmail} >
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="email" placeholder="Email" name="email" required />
+          <textarea rows={6} id="message" placeholder="Message" name="message" required></textarea>
           <input type="submit" value="Submit" />
         </Form>
       </Body>
       <Image> <img className="vcg" src={vcg} alt="vcg" data-aos="fade-left" /></Image>
-     
+
     </Wrapper>
   )
 }

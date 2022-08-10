@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import sombra from '../images/sombra.png';
 import vectorB from '../images/vectorB.svg'
@@ -8,6 +8,70 @@ import vector from '../images/vector.png';
 import lines from '../images/lines.svg';
 import { BsDiscord } from 'react-icons/bs'
 const About = () => {
+
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
+  const [isHoveringB, setIsHoveringB] = useState(false);
+
+  const handleMouseOverB = () => {
+    setIsHoveringB(true);
+  };
+
+  const handleMouseOutB = () => {
+    setIsHoveringB(false);
+  };
+  const [isHoveringC, setIsHoveringC] = useState(false);
+
+  const handleMouseOverC = () => {
+    setIsHoveringC(true);
+  };
+
+  const handleMouseOutC = () => {
+    setIsHoveringC(false);
+  };
+  const [isHoveringD, setIsHoveringD] = useState(false);
+
+  const handleMouseOverD = () => {
+    setIsHoveringD(true);
+  };
+
+  const handleMouseOutD = () => {
+    setIsHoveringD(false);
+  };
+  const [isHoveringE, setIsHoveringE] = useState(false);
+
+  const handleMouseOverE = () => {
+    setIsHoveringE(true);
+  };
+
+  const handleMouseOutE = () => {
+    setIsHoveringE(false);
+  };
+  const [isHoveringF, setIsHoveringF] = useState(false);
+
+  const handleMouseOverF = () => {
+    setIsHoveringF(true);
+  };
+
+  const handleMouseOutF = () => {
+    setIsHoveringF(false);
+  };
+  const [isHoveringG, setIsHoveringG] = useState(false);
+
+  const handleMouseOverG = () => {
+    setIsHoveringG(true);
+  };
+
+  const handleMouseOutG = () => {
+    setIsHoveringG(false);
+  };
 
   return (
     <Wrapper>
@@ -31,47 +95,79 @@ const About = () => {
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>James Shi</Name>
             <Position>position</Position>
+            
             <Icons>
-              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+              <a href="https://www.linkedin.com/in/jamesshi117/?originalSubdomain=ca" target="_blank"><AiFillLinkedin size={32} /></a>
 
-              <Discord className="discord" size={28} />
+              {isHovering && <Tag >js#8809</Tag>}
+              <Discord className="discord" size={28} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} />
             </Icons>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Edmund Jiang</Name>
             <Position>position</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+            <Icons>
+            <a href="https://www.linkedin.com/in/edmund-jiang-7675101bb/" target="_blank"><AiFillLinkedin size={32} /></a>
+
+            {isHoveringB && <Tag >Souka#2099</Tag>}
+              <Discord className="discord" size={28} onMouseOver={handleMouseOverB} onMouseOut={handleMouseOutB} />
+            </Icons>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Greg Eun</Name>
             <Position>position</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+            <Icons>
+              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+
+              {isHoveringC && <Tag >Hyun.Eun#6600</Tag>}
+              <Discord className="discord" size={28} onMouseOver={handleMouseOverC} onMouseOut={handleMouseOutC} />
+            </Icons>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Josh Peng</Name>
             <Position>position</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+            <Icons>
+              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+
+              {isHoveringD && <Tag >bIossom.#6619</Tag>}
+              <Discord className="discord" size={28} onMouseOver={handleMouseOverD} onMouseOut={handleMouseOutD} />
+            </Icons>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Ryan Busch</Name>
             <Position>position</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+            <Icons>
+              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+
+              {isHoveringE && <Tag >Ze#1993</Tag>}
+              <Discord className="discord" size={28} onMouseOver={handleMouseOverE} onMouseOut={handleMouseOutE} />
+            </Icons>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Ryan Chong</Name>
             <Position>position</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+            <Icons>
+              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+
+              {isHoveringF && <Tag >Canuckle#6315</Tag>}
+              <Discord className="discord" size={28} onMouseOver={handleMouseOverF} onMouseOut={handleMouseOutF} />
+            </Icons>
           </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Olivia Wu</Name>
             <Position>position</Position>
-            <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+            <Icons>
+              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
+
+              {isHoveringG && <Tag >yuu.#5726</Tag>}
+              <Discord className="discord" size={28} onMouseOver={handleMouseOverG} onMouseOut={handleMouseOutG} />
+            </Icons>
           </Card>
         </Cards>
         <img className="lines" src={lines} alt="sombra" />
@@ -120,23 +216,25 @@ export const Card = styled.span`
     position:relative;
     width:270px;
     height:370px;
-    background-color:#F6E2FF;
+    background-color:#fcf7ff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius:10px;
-    border: solid 1px #0D0C0C;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+  
     display:flex;
     flex-direction:column;
     padding-top:20px;
 
     img{
+    
       align-self:center;
       width:200px;
       height:200px;
       border-radius:50%;
-      border: solid 1px #0D0C0C;
+      
     }
     a{
-      color:#0D0C0C;
+      color:#1E1E1E;
       text-decoration:none;
       
       transition: all ease-in-out .2s;
@@ -423,8 +521,34 @@ align-items:center;
 `
 
 export const Discord = styled(BsDiscord)`
+position:relative;
+transition:all ease-in-out 0.2s;
 &:hover{
   color:#7289da;
+  transition:all ease-in-out 0.2s;
+}
+`
+/*
+
+*/
+
+export const Tag = styled.div`
+  position:absolute;
+  font-size:15px;
+  margin-bottom:70px;
+  margin-left:20px;
+
+  padding:5px 8px;
+  background: #7289da;
+  color:white;
+  border-radius:10px;
+
+  transition:all ease-in-out 0.2s;
+  animation: fadeIn 0.2s;
+  
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 `
 

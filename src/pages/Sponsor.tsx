@@ -113,14 +113,14 @@ export const SponsorP = styled.button`
 `
 
 export const PastSponsors = styled.div`
-  background:white;
+  background-color:#FEFEFE;
   max-width:1200px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom:200px;
   border-radius:8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   display:flex;
   flex-direction:column;
   text-align:center;

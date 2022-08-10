@@ -64,7 +64,6 @@ export const Body = styled.div`
 
 export const Title = styled.div`
   font-weight:700;
-  color:#0D0C0C;
   font-size:66px;
   padding-bottom:15px;
   @media only screen and (max-width: 600px) {
@@ -88,6 +87,7 @@ export const Form = styled.form`
     font-size:18px;
     font-weight:300;
     background-color:#F6E2FF;
+    background-color:#FEFEFE;
     border-radius:4px;
     border: solid 1px #0D0C0C;
     padding-left:2%;
@@ -103,6 +103,7 @@ export const Form = styled.form`
     font-size:18px;
     font-weight:300;
     background-color:#F6E2FF;
+    background-color:#FEFEFE;
     border-radius:4px;
     border: solid 1px #0D0C0C;
     padding-left:2%;
@@ -118,6 +119,7 @@ export const Form = styled.form`
     font-size:18px;
     font-weight:300;
     background-color:#F6E2FF;
+    background-color:#FEFEFE;
     border-radius:4px;
     border: solid 1px #0D0C0C;
     padding-left:2%;

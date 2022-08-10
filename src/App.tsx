@@ -13,14 +13,11 @@ import 'aos/dist/aos.css';
 import ScrollToTop from './components/ScrollToTop';
 import Sponsor from './pages/Sponsor';
 import HomeV2 from './pages/HomeV2';
-
 const App: FC = () => {
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
   }, []);
   
-
-
 
   return (
     <Wrapper>

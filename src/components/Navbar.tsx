@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { FC, useState} from 'react'
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElements'
 import logo from '../images/logo.png';
 
-const Navbar = () => {
+
+
+const Navbar = ({toggle}:{toggle:React.MouseEventHandler<SVGElement>}) => {
     return (
         <>
             <Nav>
-                <Bars />
+                <Bars onClick={toggle}/>
                 <NavMenu>
                 <NavLink to="/">
                     <img src={logo} alt="Logo" width="72px" height="72px" />

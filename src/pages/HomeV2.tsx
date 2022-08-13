@@ -572,6 +572,6 @@ export const Mark = styled(Marquee)`
 padding-bottom:20px;
 margin-bottom:20px;
 display:flex;
-z-index:999;
+z-index:998;
 background-color:#FBF0FF;
 `

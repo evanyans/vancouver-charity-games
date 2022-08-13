@@ -96,7 +96,7 @@ const About = () => {
         <Text data-aos="fade-up">
           <Topic >About Us</Topic>
           <Title >Who we are</Title>
-          <SubText>Vancouver Charity Games is a youth led not-for-profit organization, dedicated to providing esports opportunities to players across North America. Our video game tournaments provide fun and competitive opportunities for high school and university students, while raising money for local causes. As of now we have invited over 200 participants across NA, and accumulated over $600 raised towards charitable funds.</SubText>
+          <SubText>Vancouver Charity Games is a youth led not-for-profit organization, dedicated to providing esports opportunities to players across North America. Our video game tournaments provide fun and competitive experiences for high school and university students, while raising money for local causes. As of now we have invited over 200 participants across Canada and the United States, and raised over $600 towards charitable funds.</SubText>
 
         </Text>
         <img className="sombra" src={sombra} alt="sombra" />
@@ -506,7 +506,7 @@ export const SubText = styled.div`
   line-height:2.5rem;
   @media only screen and (max-width: 600px) {
   font-size:14px;
-  padding-top:30px;
+  padding-top:5px;
   line-height:1.6rem;
 }
 
@@ -525,7 +525,7 @@ export const SubText = styled.div`
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   font-size:18px;
-  padding-top:0px;
+  padding-top:10px;
 }
 `
 

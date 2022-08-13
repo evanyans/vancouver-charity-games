@@ -228,7 +228,7 @@ export const Charity = styled.div`
         font-size:16px;
         color:#E0E0E0;
     @media only screen and (max-width: 600px) {
-    font-size:14px;
+    font-size:12px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -236,6 +236,14 @@ export const Charity = styled.div`
  font-size:16px;
 }
     }
+    @media only screen and (max-width: 600px) {
+    font-size:20px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ font-size:25px;
+}
 
 `
 
@@ -255,7 +263,7 @@ export const Players = styled.div`
         font-size:16px;
         color:#E0E0E0;
         @media only screen and (max-width: 600px) {
-    font-size:14px;
+    font-size:12px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -263,7 +271,14 @@ export const Players = styled.div`
  font-size:16px;
 }
     }
+    @media only screen and (max-width: 600px) {
+    font-size:20px;
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+ font-size:25px;
+}
 `
 
 

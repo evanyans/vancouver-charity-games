@@ -7,6 +7,11 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import vector from '../images/vector.png';
 import lines from '../images/lines.svg';
 import { BsDiscord } from 'react-icons/bs'
+import greg from '../images/greg.png'
+import edmund from '../images/edmund.png'
+import josh from '../images/josh.png'
+import olivia from '../images/olivia.jpg'
+import evan from '../images/evan.jpg'
 const About = () => {
 
   const [isHovering, setIsHovering] = useState(false);
@@ -72,6 +77,15 @@ const About = () => {
   const handleMouseOutG = () => {
     setIsHoveringG(false);
   };
+  const [isHoveringH, setIsHoveringH] = useState(false);
+
+  const handleMouseOverH = () => {
+    setIsHoveringH(true);
+  };
+
+  const handleMouseOutH = () => {
+    setIsHoveringH(false);
+  };
 
   return (
     <Wrapper>
@@ -94,7 +108,7 @@ const About = () => {
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>James Shi</Name>
-            <Position>position</Position>
+            <Position>Organizer</Position>
             
             <Icons>
               <a href="https://www.linkedin.com/in/jamesshi117/?originalSubdomain=ca" target="_blank"><AiFillLinkedin size={32} /></a>
@@ -104,9 +118,9 @@ const About = () => {
             </Icons>
           </Card>
           <Card data-aos="fade-down">
-            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <img className="edmund" src={edmund} alt="sombra" />
             <Name>Edmund Jiang</Name>
-            <Position>position</Position>
+            <Position>Organizer</Position>
             <Icons>
             <a href="https://www.linkedin.com/in/edmund-jiang-7675101bb/" target="_blank"><AiFillLinkedin size={32} /></a>
 
@@ -115,9 +129,9 @@ const About = () => {
             </Icons>
           </Card>
           <Card data-aos="fade-down">
-            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <img className="greg" src={greg} alt="sombra" />
             <Name>Greg Eun</Name>
-            <Position>position</Position>
+            <Position>Organizer</Position>
             <Icons>
               <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
 
@@ -126,9 +140,9 @@ const About = () => {
             </Icons>
           </Card>
           <Card data-aos="fade-down">
-            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <img className="josh" src={josh} alt="sombra" />
             <Name>Josh Peng</Name>
-            <Position>position</Position>
+            <Position>Organizer</Position>
             <Icons>
               <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
 
@@ -139,7 +153,7 @@ const About = () => {
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Ryan Busch</Name>
-            <Position>position</Position>
+            <Position>Organizer</Position>
             <Icons>
               <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
 
@@ -150,7 +164,7 @@ const About = () => {
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>Ryan Chong</Name>
-            <Position>position</Position>
+            <Position>Organizer</Position>
             <Icons>
               <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
 
@@ -159,14 +173,25 @@ const About = () => {
             </Icons>
           </Card>
           <Card data-aos="fade-down">
-            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <img className="olivia" src={olivia} alt="sombra" />
             <Name>Olivia Wu</Name>
-            <Position>position</Position>
+            <Position>Media</Position>
             <Icons>
               <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
 
               {isHoveringG && <Tag >yuu.#5726</Tag>}
               <Discord className="discord" size={28} onMouseOver={handleMouseOverG} onMouseOut={handleMouseOutG} />
+            </Icons>
+          </Card>
+          <Card data-aos="fade-down">
+            <img className="evan" src={evan} alt="sombra" />
+            <Name>Evan Yan</Name>
+            <Position>Media</Position>
+            <Icons>
+              <a href="https://www.linkedin.com/in/yanevan" target="_blank"><AiFillLinkedin size={32} /></a>
+
+              {isHoveringH && <Tag >Xyeth#2720</Tag>}
+              <Discord className="discord" size={28} onMouseOver={handleMouseOverH} onMouseOut={handleMouseOutH} />
             </Icons>
           </Card>
         </Cards>
@@ -231,7 +256,10 @@ export const Card = styled.span`
       width:200px;
       height:200px;
       border-radius:50%;
-      
+      .edmund{
+        width:300px;
+        height:300px;
+      }
     }
     a{
       color:#1E1E1E;

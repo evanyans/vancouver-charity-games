@@ -29,7 +29,7 @@ const Events = () => {
               <Date>15-17 Aug 2022</Date>
               <Charity><img className="unicef" src={UNICEF} alt="jet" /></Charity>
             </FirstLine>
-            <Tag>League of Legends</Tag>
+            <TagLeague>League of Legends</TagLeague>
             <Tourny>2022 Summer Tournament</Tourny>
             <Bottom>
               <BottomText>Registration Open</BottomText>
@@ -42,15 +42,15 @@ const Events = () => {
         <Text >Past Events</Text>
         <Line></Line>
       </PastTitle>
-      <Past data-aos="fade-up">
-        <Card>
+      <Past>
+        <Card  data-aos="fade-up">
           <Image></Image>
           <Fields>
             <FirstLine>
               <Date>27-29 Dec 2021</Date>
               <Charity><img className="unicef" src={gcfb} alt="jet" /></Charity>
             </FirstLine>
-            <Tag>League of Legends</Tag>
+            <TagLeague>League of Legends</TagLeague>
             <Tourny>2021 Winter Tournament</Tourny>
             <Bottom>
               <BottomText>Greater Vancouver Food Bank</BottomText>
@@ -58,29 +58,29 @@ const Events = () => {
             </Bottom>
           </Fields>
         </Card>
-        <Card>
+        <Card  data-aos="fade-up">
           <Image></Image>
           <Fields>
             <FirstLine>
               <Date>4-5 Sep 2021</Date>
               <Charity><img className="redcross" src={redcross} alt="jet" /></Charity>
             </FirstLine>
-            <Tag>League of Legends</Tag>
-            <Tourny>2021 Fall Tournament</Tourny>
+            <TagLeague>League of Legends</TagLeague>
+            <Tourny>2021 Summer Tournament</Tourny>
             <Bottom>
               <BottomText>Canadian Red Cross</BottomText>
               <ArrowLink to="/2021-fall-league">&#10230;</ArrowLink>
             </Bottom>
           </Fields>
         </Card>
-        <Card>
+        <Card  data-aos="fade-up">
           <Image></Image>
           <Fields>
             <FirstLine>
               <Date>30 Jul-1 Aug 2021</Date>
               <Charity><img className="hospital" src={hospital} alt="jet" /></Charity>
             </FirstLine>
-            <Tag>Valorant</Tag>
+            <TagVal>Valorant</TagVal>
             <Tourny>2021 Summer Tournament</Tourny>
             <Bottom>
               <BottomText>BC Children's Hospital</BottomText>
@@ -151,16 +151,43 @@ export const Charity = styled.div`
   }
 `
 
-export const Tag = styled.button`
+export const TagVal = styled.button`
   font-weight:500;
   font-size:16px;
   color:white;
-  background:black;
+  border:none;
+  background:#dc3d4b;
 
   text-align:left;
   padding:5px 7px;
 
   margin-top:30px;
+
+  .league{
+    background-color:#003366;
+  }
+  .valorant{
+    background-color:#dc3d4b;
+  }
+`
+export const TagLeague = styled.button`
+  font-weight:500;
+  font-size:16px;
+  color:white;
+  border:none;
+  background:#445fa5;
+
+  text-align:left;
+  padding:5px 7px;
+
+  margin-top:30px;
+
+  .league{
+    background-color:#003366;
+  }
+  .valorant{
+    background-color:#dc3d4b;
+  }
 `
 
 export const Tourny = styled.div`

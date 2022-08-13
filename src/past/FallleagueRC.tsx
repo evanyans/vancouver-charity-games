@@ -9,7 +9,7 @@ const SummervalBCH = () => {
     <Wrapper>
       <Body data-aos="fade-up">
         <Topic>September 4th - 5th</Topic>
-        <Title>2021 Fall League of Legends Tournament</Title>
+        <Title>2021 Summer League of Legends Tournament</Title>
         <Stats>
           <Money>$<CountUp end={185} duration={1} /><div className="sub">Money Raised</div></Money>
           <People><CountUp end={99} duration={1} /><div className = "sub">Participants</div></People>

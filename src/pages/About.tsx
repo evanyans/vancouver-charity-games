@@ -109,7 +109,6 @@ const About = () => {
             <Name>Edmund Jiang</Name>
             <Position>Founder & Lead Organizer</Position>
             <Icons>
-            <a href="https://www.linkedin.com/in/edmund-jiang-7675101bb/" target="_blank"><AiFillLinkedin size={32} /></a>
 
             {isHoveringB && <Tag >Souka#2099</Tag>}
               <Discord className="discord" size={28} onMouseOver={handleMouseOverB} onMouseOut={handleMouseOutB} />
@@ -121,7 +120,6 @@ const About = () => {
             <Position>Founder & Lead Organizer</Position>
             
             <Icons>
-              <a href="https://www.linkedin.com/in/jamesshi117/?originalSubdomain=ca" target="_blank"><AiFillLinkedin size={32} /></a>
 
               {isHovering && <Tag >js#8809</Tag>}
               <Discord className="discord" size={28} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} />
@@ -133,7 +131,6 @@ const About = () => {
             <Name>Greg Eun</Name>
             <Position>Organizer</Position>
             <Icons>
-              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
 
               {isHoveringC && <Tag >Hyun.Eun#6600</Tag>}
               <Discord className="discord" size={28} onMouseOver={handleMouseOverC} onMouseOut={handleMouseOutC} />
@@ -144,7 +141,6 @@ const About = () => {
             <Name>Josh Peng</Name>
             <Position>Organizer</Position>
             <Icons>
-              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
 
               {isHoveringD && <Tag >bIossom.#6619</Tag>}
               <Discord className="discord" size={28} onMouseOver={handleMouseOverD} onMouseOut={handleMouseOutD} />
@@ -155,7 +151,6 @@ const About = () => {
             <Name>Ryan Busch</Name>
             <Position>Organizer</Position>
             <Icons>
-              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
 
               {isHoveringE && <Tag >Ze#1993</Tag>}
               <Discord className="discord" size={28} onMouseOver={handleMouseOverE} onMouseOut={handleMouseOutE} />
@@ -166,7 +161,6 @@ const About = () => {
             <Name>Ryan Chong</Name>
             <Position>Organizer</Position>
             <Icons>
-              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
 
               {isHoveringF && <Tag >Canuckle#6315</Tag>}
               <Discord className="discord" size={28} onMouseOver={handleMouseOverF} onMouseOut={handleMouseOutF} />
@@ -177,7 +171,6 @@ const About = () => {
             <Name>Olivia Wu</Name>
             <Position>Media</Position>
             <Icons>
-              <a href="https://www.linkedin.com/company/spacex/" target="_blank"><AiFillLinkedin size={32} /></a>
 
               {isHoveringG && <Tag >yuu.#5726</Tag>}
               <Discord className="discord" size={28} onMouseOver={handleMouseOverG} onMouseOut={handleMouseOutG} />
@@ -188,7 +181,6 @@ const About = () => {
             <Name>Evan Yan</Name>
             <Position>Media</Position>
             <Icons>
-              <a href="https://www.linkedin.com/in/yanevan" target="_blank"><AiFillLinkedin size={32} /></a>
 
               {isHoveringH && <Tag >Xyeth#2720</Tag>}
               <Discord className="discord" size={28} onMouseOver={handleMouseOverH} onMouseOut={handleMouseOutH} />
@@ -240,7 +232,7 @@ max-width:1300px;
 export const Card = styled.span`
     position:relative;
     width:270px;
-    height:370px;
+    height:365px;
     background-color:#fcf7ff;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius:10px;

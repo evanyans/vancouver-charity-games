@@ -96,8 +96,7 @@ const About = () => {
         <Text data-aos="fade-up">
           <Topic >About Us</Topic>
           <Title >Who we are</Title>
-          <SubText>Lorem ipsum dolor sit amet. Non voluptatem aperiam qui placeat quaerat non fugit beatae aut consequatur aperiam et fuga alias. Est velit labore 33 rerum rerum ut molestiae deleniti. Sed expedita earum non nulla velit ex eaque libero id debitis omnis. Ea placeat sequi eos facilis distinctio aut illo aliquam 33 veniam fugiat est sint dolorem ut nulla consequatur. Aut animi ipsam et nulla officiis At voluptates officiis est dolorem voluptatem et consequatur ipsum id autem natus et ducimus reprehenderit.
-            At aliquid quos quo odit iure cum nisi delectus et distinctio ipsum et debitis saepe rem tenetur tenetur eum fuga voluptatibus.</SubText>
+          <SubText>Vancouver Charity Games is a youth led not-for-profit organization, dedicated to providing esports opportunities to players across North America. Our video game tournaments provide fun and competitive opportunities for high school and university students, while raising money for local causes. As of now we have invited over 200 participants across NA, and accumulated over $600 raised towards charitable funds.</SubText>
 
         </Text>
         <img className="sombra" src={sombra} alt="sombra" />
@@ -105,10 +104,21 @@ const About = () => {
       <Team>
         <TitleText data-aos="fade-down">Our Team</TitleText>
         <Cards>
+        <Card data-aos="fade-down">
+            <img className="edmund" src={edmund} alt="sombra" />
+            <Name>Edmund Jiang</Name>
+            <Position>Founder & Lead Organizer</Position>
+            <Icons>
+            <a href="https://www.linkedin.com/in/edmund-jiang-7675101bb/" target="_blank"><AiFillLinkedin size={32} /></a>
+
+            {isHoveringB && <Tag >Souka#2099</Tag>}
+              <Discord className="discord" size={28} onMouseOver={handleMouseOverB} onMouseOut={handleMouseOutB} />
+            </Icons>
+          </Card>
           <Card data-aos="fade-down">
             <img className="wonyoung" src={wonyoung} alt="sombra" />
             <Name>James Shi</Name>
-            <Position>Organizer</Position>
+            <Position>Founder & Lead Organizer</Position>
             
             <Icons>
               <a href="https://www.linkedin.com/in/jamesshi117/?originalSubdomain=ca" target="_blank"><AiFillLinkedin size={32} /></a>
@@ -117,17 +127,7 @@ const About = () => {
               <Discord className="discord" size={28} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} />
             </Icons>
           </Card>
-          <Card data-aos="fade-down">
-            <img className="edmund" src={edmund} alt="sombra" />
-            <Name>Edmund Jiang</Name>
-            <Position>Organizer</Position>
-            <Icons>
-            <a href="https://www.linkedin.com/in/edmund-jiang-7675101bb/" target="_blank"><AiFillLinkedin size={32} /></a>
 
-            {isHoveringB && <Tag >Souka#2099</Tag>}
-              <Discord className="discord" size={28} onMouseOver={handleMouseOverB} onMouseOut={handleMouseOutB} />
-            </Icons>
-          </Card>
           <Card data-aos="fade-down">
             <img className="greg" src={greg} alt="sombra" />
             <Name>Greg Eun</Name>
@@ -221,7 +221,7 @@ export const Team = styled.div`
     width:800px;
     z-index:-1;
     left:-160px;
-    top:69rem;
+    top:60rem;
   }
 
 `
@@ -514,7 +514,7 @@ export const SubText = styled.div`
   line-height:2.5rem;
   @media only screen and (max-width: 600px) {
   font-size:14px;
-  padding-top:5px;
+  padding-top:30px;
   line-height:1.6rem;
 }
 

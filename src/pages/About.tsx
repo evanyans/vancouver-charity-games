@@ -12,6 +12,9 @@ import edmund from '../images/edmund.png'
 import josh from '../images/josh.png'
 import olivia from '../images/olivia.jpg'
 import evan from '../images/evan.jpg'
+import cube from '../images/cube.png'
+import taro from '../images/taro.png'
+
 const About = () => {
 
   const [isHovering, setIsHovering] = useState(false);
@@ -115,7 +118,7 @@ const About = () => {
             </Icons>
           </Card>
           <Card data-aos="fade-down">
-            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <img className="taro" src={taro} alt="sombra" />
             <Name>James Shi</Name>
             <Position>Founder & Lead Organizer</Position>
             
@@ -147,7 +150,7 @@ const About = () => {
             </Icons>
           </Card>
           <Card data-aos="fade-down">
-            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <img className="cube" src={cube} alt="sombra" />
             <Name>Ryan Busch</Name>
             <Position>Organizer</Position>
             <Icons>

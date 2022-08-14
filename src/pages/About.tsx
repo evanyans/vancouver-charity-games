@@ -13,7 +13,7 @@ import josh from '../images/josh.png'
 import olivia from '../images/olivia.jpg'
 import evan from '../images/evan.jpg'
 import cube from '../images/cube.png'
-import taro from '../images/taro.png'
+import taro from '../images/taro.jpg'
 
 const About = () => {
 

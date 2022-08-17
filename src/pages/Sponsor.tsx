@@ -7,7 +7,7 @@ const Sponsor = () => {
     <Wrapper>
       <Text data-aos="fade-up">
         <Title>Sponsor Us</Title>
-        <Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet justo donec enim diam vulputate ut pharetra sit. Dictum fusce ut placerat orci nulla. Egestas congue quisque egestas diam in arcu cursus euismod. </Body>
+        <Body>With the help of our sponsors, we are able to enhance the quality of our events and create  a better experience for our participants. In return, our organization provides substantial advertising to the rising demographic of young adults across North America. Please consider sponsoring us to make an impact on youth-based opportunities as well as making a charitable impact.</Body>
         <a href="http://palmer.wellesley.edu/~aschultz/w06/math19/homeworks_etc/Homework3_solns.pdf" target="_blank"><SponsorP>Sponsorship Package</SponsorP></a>
       </Text>
       <Grid data-aos="fade-up">
@@ -47,15 +47,13 @@ export const Title = styled.div`
   font-weight:700;
   font-size:66px;
   @media only screen and (max-width: 600px) {
+    font-size:46px;
+  }
 
- font-size:46px;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  font-sixze:66px;
+  @media only screen and (min-width: 600px) {
+    font-sixze:66px;
   
-}
+  }
 
 `
 
@@ -67,17 +65,14 @@ align-self:center;
   padding-left:2%;
   padding-right:2%;
   @media only screen and (max-width: 600px) {
-
-font-size:15px;
-line-height:1.5rem;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
- font-size:20px;
- line-height:2rem;
+    font-size:15px;
+    line-height:1.5rem;
+  }
+  @media only screen and (min-width: 600px) {
+    font-size:20px;
+    line-height:2rem;
  
-}
+  }
 `
 
 export const SponsorP = styled.button`
@@ -102,13 +97,12 @@ export const SponsorP = styled.button`
     }
   @media only screen and (max-width: 600px) {
     font-size:15px;
-}
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
- font-size:19px;
+  @media only screen and (min-width: 600px) {
+    font-size:19px;
  
-}
+  }
 
 `
 
@@ -137,7 +131,6 @@ padding-top:40px;
     font-size:46px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
  font-size:66px;
  
@@ -161,13 +154,11 @@ display:flex;
     height:20%;
   @media only screen and (max-width: 600px) {
     display:none;
-}
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
- display:block;
- 
-}
+  @media only screen and (min-width: 600px) {
+    display:block;
+  }
   }
 `
 
@@ -195,11 +186,9 @@ export const SponsorName = styled.div`
     font-size:26px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
- font-size:36px;
- 
-}
+  @media only screen and (min-width: 600px) {
+    font-size:36px;
+  }
 
 `
 
@@ -207,15 +196,14 @@ export const SponsorText = styled.div`
   padding-top:10px;
   font-size:18px;
   line-height:1.5rem;
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     font-size:15px;
-}
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
- font-size:18px;
+  @media only screen and (min-width: 600px) {
+    font-size:18px;
  
-}
+  }
 `
 
 export const Grid = styled.div`
@@ -238,24 +226,10 @@ export const Grid = styled.div`
  
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .reaper{
     display:block;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 `

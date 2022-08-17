@@ -2,7 +2,6 @@ import React, { FC, useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home';
 import Footer from './components/Footer';
 import About from './pages/About';
 import Events from './pages/Events';

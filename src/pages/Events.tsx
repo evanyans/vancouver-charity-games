@@ -268,24 +268,20 @@ justify-content:center;
       display:none;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   display:none;
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   display:none;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   display:none;
   
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   display:flex;
 }
@@ -310,23 +306,11 @@ export const Body = styled.div`
     padding-bottom:50px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  padding-left:15%;
+  @media only screen and (min-width: 600px) {
+    padding-left:15%;
 
-}
+  }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 
 `
 
@@ -336,24 +320,13 @@ export const Topic = styled.div`
   font-weight:600;
   @media only screen and (max-width: 600px) {
     font-size:18px;
-}
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
- font-size:36px;
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+  @media only screen and (min-width: 600px) {
+    font-size:36px;
+  }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 `
 
 export const Title = styled.div`
@@ -362,24 +335,12 @@ export const Title = styled.div`
   font-weight:700;
   @media only screen and (max-width: 600px) {
     font-size:30px;
-}
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
- font-size:66px;
-}
+  @media only screen and (min-width: 600px) {
+    font-size:66px;
+  }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 `
 
 export const Current = styled.div`
@@ -394,40 +355,14 @@ export const Current = styled.div`
     justify-content:center;
     padding-left:5%;
     padding-right:5%;
-}
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  padding-left:15%;
-  padding-right:100px;
-}
+  @media only screen and (min-width: 600px) {
+    padding-left:15%;
+    padding-right:100px;
+  }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 `
-
-/*
-export const Image = styled.div`
-  border-top-left-radius:15px;
-  border-top-right-radius:15px;
-  background-image: url(${wonyoung});
-  background-repeat: no-repeat;
-  background-size:cover;
-  height:230px;
-  border-bottom: solid 1px #0D0C0C;
-`
-*/
-
-
 
 export const PastTitle = styled.div`
   padding-left:100px;
@@ -436,25 +371,14 @@ export const PastTitle = styled.div`
     
     padding-left:5%;
     padding-right:5%;
-}
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  padding-left:15%;
-  padding-right:100px;
-}
+  @media only screen and (min-width: 600px) {
+    padding-left:15%;
+    padding-right:100px;
+  }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 `
 
 export const Text = styled.div`
@@ -463,28 +387,16 @@ export const Text = styled.div`
   font-weight:700;
   @media only screen and (max-width: 600px) {
     font-size:26px;
-}
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
- font-size:66px;
-}
+  @media only screen and (min-width: 600px) {
+    font-size:66px;
+  }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 `
 
 export const Line = styled.div`
-      position:relative;
+    position:relative;
     width:91.7%;
     height:1px;
     background-color:#C549FF;
@@ -505,23 +417,13 @@ export const Past = styled.div`
     padding-right:5%;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  padding-left:15%;
-  padding-right:100px;
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+  @media only screen and (min-width: 600px) {
+    padding-left:15%;
+    padding-right:100px;
+  }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
 `
 
 export const NavLink = styled(Link)`

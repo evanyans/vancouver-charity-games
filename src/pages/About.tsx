@@ -14,6 +14,7 @@ import olivia from '../images/olivia.jpg'
 import evan from '../images/evan.jpg'
 import cube from '../images/cube.png'
 import taro from '../images/taro.jpg'
+import yoda from '../images/yoda.jpg'
 
 const About = () => {
 
@@ -160,7 +161,7 @@ const About = () => {
             </Icons>
           </Card>
           <Card data-aos="fade-down">
-            <img className="wonyoung" src={wonyoung} alt="sombra" />
+            <img className="yoda" src={yoda} alt="sombra" />
             <Name>Ryan Chong</Name>
             <Position>Organizer</Position>
             <Icons>
@@ -290,22 +291,9 @@ export const TitleText = styled.div`
   font-size:40px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  font-size:64px;
-}
+  @media only screen and (min-width: 1200px) {
+    font-size:64px;
+  }
 `
 
 export const Body = styled.div`
@@ -320,7 +308,7 @@ flex-direction:row;
   @media only screen and (max-width: 600px) {
   display:none;
 
-}
+  }
 
 @media only screen and (min-width: 600px) {
   display:none;
@@ -366,7 +354,6 @@ flex-direction:row;
   display:none;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   width:500px;
   top:47rem;
@@ -382,28 +369,24 @@ flex-direction:row;
   position:relative;
   right:150px;
   
-  /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
   display:none;
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   display:none;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   display:none;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   display:none;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   display:inline-block;
 }
@@ -417,7 +400,7 @@ export const Text = styled.div`
     padding-bottom:150px;
     padding-left:150px;
     padding-right:50px;
-  /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
   padding-top:30px;
   padding-bottom:60px;
@@ -425,22 +408,21 @@ export const Text = styled.div`
   padding-right:5%;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (min-width: 600px) {
   padding-left:50px;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
   padding-left:50px;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
   padding-left:50px;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   padding-top:150px;
   padding-left:150px;
@@ -455,22 +437,7 @@ export const Topic = styled.div`
   font-size:30px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
 
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   font-size:40px;
 }
@@ -484,19 +451,7 @@ export const Title = styled.div`
   font-size:46px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   font-size:66px;
 }
@@ -513,19 +468,7 @@ export const SubText = styled.div`
   line-height:1.6rem;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   font-size:18px;
   padding-top:10px;
@@ -559,7 +502,7 @@ export const Tag = styled.div`
   position:absolute;
   font-size:15px;
   margin-bottom:70px;
-  margin-left:20px;
+  margin-left:0px;
 
   padding:5px 8px;
   background: #7289da;

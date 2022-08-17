@@ -10,25 +10,6 @@ import WidgetBot from '@widgetbot/react-embed'
 import Marquee from "react-fast-marquee";
 
 const HomeV2 = () => {
-    /*
-    <Arrows>
-    <div className="arrow">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</Arrows>
-                <Boxes>
-                    <Donate >
-                        <ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA>
-                    </Donate>
-                    <Donate >
-                        <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
-                    </Donate >
-                    <Donate ><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
-                </Boxes>
-*/
-
     return (
 
         <Wrapper>
@@ -298,30 +279,22 @@ export const Text = styled.div`
     padding-left:4%;
     padding-right:6%;
     padding-bottom:10%;
-@media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         margin-left:auto;
         margin-right:auto;
-}
+    }
 
-@media only screen and (min-width: 600px) {
-    margin-left:auto;
+    @media only screen and (min-width: 600px) {
+        margin-left:auto;
         margin-right:auto;
         max-width:100%;
-}
+    }
 
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 992px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
-    margin-right:auto;
-    margin-left:15%;
-    max-width:740px;
-}
+    @media only screen and (min-width: 1200px) {
+        margin-right:auto;
+        margin-left:15%;
+        max-width:740px;
+    }
 
 
 `
@@ -337,15 +310,11 @@ export const Topic = styled.div`
     color:#C549FF;
     @media only screen and (max-width: 600px) {
       font-size:20px;
-}
+    }
+    @media only screen and (min-width: 600px) {
+        font-size:30px;
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  font-size:30px;
-
-}
-
-
+    }
 `
 
 export const Cause = styled.div`
@@ -353,14 +322,11 @@ export const Cause = styled.div`
     font-size:46px;
     @media only screen and (max-width: 600px) {
       font-size:36px;
-}
+    }
+    @media only screen and (min-width: 600px) {
+        font-size:46px;
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  font-size:46px;
-
-}
-
+    }
 `
 
 export const BodyText = styled.div`
@@ -369,13 +335,11 @@ export const BodyText = styled.div`
     line-height:1.6rem;
     @media only screen and (max-width: 600px) {
       font-size:14px;
-}
+    }
+    @media only screen and (min-width: 600px) {
+        font-size:18px;
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  font-size:18px;
-
-}
+    }
 
 
 `
@@ -397,10 +361,11 @@ export const Donate = styled.span`
     margin: 0 80px;
     margin-top:20px;
     width:90%;
-&:hover{
-    transition: all 0.2s ease-in-out;
-    background-color:#ddffff;
-}
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background-color:#ddffff;
+    }
 
 
 `
@@ -408,19 +373,19 @@ export const Donate = styled.span`
 export const ContentA = styled.div`
     display:flex;
     flex-direction:row;
-.foodbank{
-    width:70px;
-    padding-top:18px;
-}
-.redcross {
-    width:80px;
-    padding-top:9px;
-}
-.hospital {
-    width:110px;
-    padding-top:12px;
-    padding-right:3px;
-}
+    .foodbank{
+        width:70px;
+        padding-top:18px;
+    }
+    .redcross {
+        width:80px;
+        padding-top:9px;
+    }
+    .hospital {
+        width:110px;
+        padding-top:12px;
+        padding-right:3px;
+    }
 `
 
 export const Circle = styled.span`
@@ -473,13 +438,11 @@ export const Events = styled.button`
     @media only screen and (max-width: 600px) {
       font-size:15px;
       padding: 13px 45px;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  font-size:18px;
-  padding: 13px 50px;
-}
+    }
+    @media only screen and (min-width: 600px) {
+        font-size:18px;
+        padding: 13px 50px;
+    }
 
 `
 
@@ -495,25 +458,23 @@ export const NavLink = styled(Link)`
     transition: all 0.2s ease-in-out;
   }
   @media only screen and (max-width: 600px) {
-font-size:15px;
-padding-left:15px;
-}
+    font-size:15px;
+    padding-left:15px;
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-font-size:19px;
-}
+    @media only screen and (min-width: 600px) {
+        font-size:19px;
+    }
 `
 
 export const Arrows = styled.div`
-      @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         display:none;
-}
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 600px) {
 font-size:19px;
-}
+    }
 `
 
 
@@ -537,50 +498,42 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
     --angle: 360deg;
   }
 }
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
+    @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }
 
     &:hover{
         transition: all 0.2s ease-in-out;
         position:relative;
         top:-60px;
-}
-@media only screen and (max-width: 600px) {
-    right:0;
-    top:-10px;
-    margin: 0 2%;
-    &:hover{
-        transition: top 0.2s ease-in-out;
-        position:relative;
-        top:-20px;
-}
-}
-
-@media only screen and (min-width: 600px) {
-right:0;
-top:-50px;
-margin: 0 2%;
-&:hover{
-        transition: top 0.2s ease-in-out;
-        position:relative;
-        top:-60px;
-}
+    }
+    @media only screen and (max-width: 600px) {
+        right:0;
+        top:-10px;
+        margin: 0 2%;
+        &:hover{
+            transition: top 0.2s ease-in-out;
+            position:relative;
+            top:-20px;
+        }
 }
 
-@media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 600px) {
+        right:0;
+        top:-50px;
+        margin: 0 2%;
+        &:hover{
+            transition: top 0.2s ease-in-out;
+            position:relative;
+            top:-60px;
+        }
+    }
 
-}
-
-@media only screen and (min-width: 992px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
-    right:3%
-}
+    @media only screen and (min-width: 1200px) {
+        right:3%
+    }
 `
 
 export const Mark = styled(Marquee)`

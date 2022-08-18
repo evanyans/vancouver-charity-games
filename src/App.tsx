@@ -15,12 +15,15 @@ import HomeV2 from './pages/HomeV2';
 import FallleagueRC from './past/FallleagueRC'
 import WinterleagueFB from './past/WinterleagueFB';
 import Sidebar from './components/Sidebar';
+
 const App: FC = () => {
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
   }, []);
 
   const[isOpen, setIsOpen] = useState(false)
+
+const [modalOpen, setModalOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen)

@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="right">
                     <a href="https://www.instagram.com/vancharitygames/" target="_blank"><BsInstagram size={18}/></a>
                     <a href="https://discord.gg/K8Ax5vQKEZ" target="_blank"><Discord size={20} /></a>
-                    <a href="https://www.facebook.com/vancharitygames/?locale=ne_NP" target="_blank"><BsTwitch size={18}/></a>
+                    <a href="https://www.twitch.tv/vancouvercharitygames?tt_content=twitch_logo&tt_medium=embed" target="_blank"><BsTwitch size={18}/></a>
                 </div>
             </Text>
         </Wrapper>

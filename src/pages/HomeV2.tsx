@@ -8,7 +8,9 @@ import hospital from '../images/hospital.png';
 import { NavLink as Link } from 'react-router-dom';
 import WidgetBot from '@widgetbot/react-embed'
 import Marquee from "react-fast-marquee";
-
+import { FaDiscord } from 'react-icons/fa'
+import { BsInstagram, BsTwitch } from 'react-icons/bs'
+import vcg from '../images/vancharity.png'
 const HomeV2 = () => {
     return (
 
@@ -16,6 +18,11 @@ const HomeV2 = () => {
             <Title >
                 <TitleText data-aos="fade-up">Vancouver <div className="gradient">Charity</div> Games</TitleText>
                 <SubText data-aos="fade-up">Current: 2022 Summer League of Legends Tournament<br></br>August 5th-7th, 12-3PM PST</SubText>
+                <Icons>
+                    <a href="https://www.instagram.com/vancharitygames/" target="_blank"><BsInstagram size={22} color="white"/></a>
+                    <a href="https://discord.gg/K8Ax5vQKEZ" target="_blank"><FaDiscord size={22} color="white"/></a>
+                    <a href="https://www.twitch.tv/vancouvercharitygames?tt_content=twitch_logo&tt_medium=embed" target="_blank"><BsTwitch size={22} color="white" /></a>
+                </Icons>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7b6DGC0ja79YbVNGNs9FcJwWaDHs5dLSO0xpP8_FL_duoQ/viewform" target="_blank"><Register>Register Now</Register></a>
                 <Stats data-aos="fade-up">
                     <Charity>
@@ -30,7 +37,7 @@ const HomeV2 = () => {
                 </Stats>
 
             </Title>
-            <Mark gradient={false }gradientColor={[88,83,94]} speed={200} >
+            <Mark gradient={false} gradientColor={[88, 83, 94]} speed={200} >
                 <Donate >
                     <ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA>
                 </Donate>
@@ -38,7 +45,7 @@ const HomeV2 = () => {
                     <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
                 </Donate >
                 <Donate ><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
-                
+
             </Mark>
             <Sub>
 
@@ -55,14 +62,15 @@ const HomeV2 = () => {
                     <NavLink to="/about">About Us &gt; </NavLink>
                 </Text>
                 <Discord
-                    className ="gradient-border"
+                    className="gradient-border"
                     server="856333893765693490"
                     channel="859998756355440640"
                     height={750}
                     width={1200}
                 />
-
+                
             </Sub>
+            <img className="vcg" src={vcg} alt="vcg" />
         </Wrapper>
     )
 }
@@ -72,6 +80,13 @@ export default HomeV2
 export const Wrapper = styled.div`
     display:flex;
     flex-direction:column;
+    .vcg{
+        position:absolute;
+        right:500px;
+        bottom:-900px;
+        opacity: 0.5;
+        z-index:-10;
+    }
 `
 
 export const Title = styled.div`
@@ -164,7 +179,7 @@ export const SubText = styled.div`
 export const Register = styled.button`
     background:none;
     border-radius:4px;
-    margin-top:50px;
+    margin-top:15px;
     color:#F5DFFF;
     border:solid 2px;
     padding: 13px 50px;
@@ -542,4 +557,12 @@ margin-bottom:20px;
 display:flex;
 z-index:998;
 background-color:#FBF0FF;
+`
+
+export const Icons = styled.div`
+    display:flex;
+    justify-content:center;
+    padding-top:20px;
+    flex-direction:row;
+    gap:3rem;
 `

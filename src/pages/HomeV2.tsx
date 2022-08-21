@@ -17,8 +17,8 @@ const HomeV2 = () => {
         <Wrapper>
             <Title >
                 <TitleText data-aos="fade-up">Vancouver <div className="gradient">Charity</div> Games</TitleText>
-                <SubText data-aos="fade-up">Current: 2022 Summer League of Legends Tournament<br></br>August 5th-7th, 12-3PM PST</SubText>
-                <Icons>
+                <SubText data-aos="fade-up"></SubText>
+                <Icons data-aos="fade-up">
                     <a href="https://www.instagram.com/vancharitygames/" target="_blank"><BsInstagram size={22} color="white"/></a>
                     <a href="https://discord.gg/K8Ax5vQKEZ" target="_blank"><FaDiscord size={22} color="white"/></a>
                     <a href="https://www.twitch.tv/vancouvercharitygames?tt_content=twitch_logo&tt_medium=embed" target="_blank"><BsTwitch size={22} color="white" /></a>
@@ -39,12 +39,12 @@ const HomeV2 = () => {
             </Title>
             <Mark gradient={false} gradientColor={[88, 83, 94]} speed={200} >
                 <Donate >
-                    <ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA>
+                    <a href="https://foodbank.bc.ca/" target="_blank"><ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA></a>
                 </Donate>
                 <Donate >
-                    <ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA>
+                <a href="https://www.redcross.ca/" target="_blank"><ContentA><Circle><img className="redcross" src={redcross} alt="redcross" /></Circle><ContentText>Canadian Red Cross<br></br><span>$185 Raised</span></ContentText></ContentA></a>
                 </Donate >
-                <Donate ><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></Donate>
+                <Donate ><a href="https://www.bcchf.ca/" target="_blank"><ContentA><Circle><img className="hospital" src={hospital} alt="hospital" /></Circle><ContentText>BC Children's Hospital<br></br><span>$265 Raised</span></ContentText></ContentA></a></Donate>
 
             </Mark>
             <Sub>
@@ -70,7 +70,6 @@ const HomeV2 = () => {
                 />
                 
             </Sub>
-            <img className="vcg" src={vcg} alt="vcg" />
         </Wrapper>
     )
 }
@@ -177,6 +176,7 @@ export const SubText = styled.div`
 `
 
 export const Register = styled.button`
+display:none;
     background:none;
     border-radius:4px;
     margin-top:15px;
@@ -378,9 +378,14 @@ export const Donate = styled.span`
     width:90%;
 
     &:hover{
+        cursor:pointer;
         transition: all 0.2s ease-in-out;
         background-color:#ddffff;
     }
+    a{
+        text-decoration:none;
+    }
+    
 
 
 `

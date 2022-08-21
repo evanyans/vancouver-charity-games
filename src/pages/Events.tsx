@@ -22,7 +22,14 @@ const Events = () => {
       </Body>
       <img className="jet" src={jet} alt="jet" />
       <Current>
-        <Card data-aos="fade-up">
+
+      </Current>
+      <PastTitle data-aos="fade-up">
+        <Text >Past Events</Text>
+        <Line></Line>
+      </PastTitle>
+      <Past>
+      <Card data-aos="fade-up">
           <Image></Image>
           <Fields>
             <FirstLine>
@@ -32,17 +39,11 @@ const Events = () => {
             <TagLeague>League of Legends</TagLeague>
             <Tourny>2022 Summer Tournament</Tourny>
             <Bottom>
-              <BottomText>Registration Open</BottomText>
+              <BottomText>UNICEF</BottomText>
               <Arrow as="a" href="https://docs.google.com/forms/d/e/1FAIpQLSeo7b6DGC0ja79YbVNGNs9FcJwWaDHs5dLSO0xpP8_FL_duoQ/viewform" target="_blank">&#10230;</Arrow>
             </Bottom>
           </Fields>
         </Card>
-      </Current>
-      <PastTitle data-aos="fade-up">
-        <Text >Past Events</Text>
-        <Line></Line>
-      </PastTitle>
-      <Past>
         <Card  data-aos="fade-up">
           <Image></Image>
           <Fields>

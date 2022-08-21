@@ -40,7 +40,7 @@ export const Text = styled.div`
     }
     
     color:white;
-    font-size:14px;
+    font-size:12px;
     font-weight:400;
 
     .left{

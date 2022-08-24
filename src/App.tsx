@@ -15,6 +15,7 @@ import HomeV2 from './pages/HomeV2';
 import FallleagueRC from './past/FallleagueRC'
 import WinterleagueFB from './past/WinterleagueFB';
 import Sidebar from './components/Sidebar';
+import SummerleagueUN from './past/SummerleagueUN';
 
 const App: FC = () => {
   useEffect(() => {
@@ -46,6 +47,7 @@ const [modalOpen, setModalOpen] = useState(false);
           <Route path="/2021-summer-val" element={<SummervalBCH />} />
           <Route path="/2021-fall-league" element={<FallleagueRC />} />
           <Route path="/2021-winter-league" element={<WinterleagueFB />} />
+          <Route path="/2022-summer-league" element={<SummerleagueUN />} />
         </Routes>
         <Footer />
       </Router>

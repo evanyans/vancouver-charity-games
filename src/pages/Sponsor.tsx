@@ -3,12 +3,17 @@ import styled from 'styled-components'
 import reaper from '../images/reaper.svg'
 import mysteries from '../images/mysteries.png'
 const Sponsor = () => {
+  /*<a href="http://palmer.wellesley.edu/~aschultz/w06/math19/homeworks_etc/Homework3_solns.pdf" target="_blank"><SponsorP>Sponsorship Package</SponsorP></a>*/
   return (
     <Wrapper>
       <Text data-aos="fade-up">
         <Title>Sponsor Us</Title>
-        <Body>With the help of our sponsors, we are able to enhance the quality of our events and create  a better experience for our participants. In return, our organization provides substantial advertising to the rising demographic of young adults across North America. Please consider sponsoring us to make an impact on youth-based opportunities as well as making a charitable impact.</Body>
-        <a href="http://palmer.wellesley.edu/~aschultz/w06/math19/homeworks_etc/Homework3_solns.pdf" target="_blank"><SponsorP>Sponsorship Package</SponsorP></a>
+        <Body>With the help of our sponsors, we are able to enhance the quality of our events and create
+            a better experience for our participants. In return, our organization provides substantial
+             advertising to the rising demographic of young adults across North America. Please consider 
+             sponsoring us to make an impact on youth-based opportunities as well as making a charitable impact. <br/><br/><em>
+             (Sponsorship package in development)</em></Body>
+        
       </Text>
       <Grid data-aos="fade-up">
         <img className="reaper" src={reaper} alt="gamers" />

@@ -2,14 +2,16 @@ import React from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import jet from '../images/jet.svg';
-import purple from '../eventimages/purple.png'
+
 import UNICEF from '../eventimages/UNICEF.png'
 import redcross from '../eventimages/redcross.png'
 import hospital from '../eventimages/hospital.png'
 import gcfb from '../eventimages/gcfb.png'
-
-
-
+import valoA from '../eventimages/2021summer.png'
+import purple from '../eventimages/purple.png'
+import leagueA from '../eventimages/2021league.png'
+import leagueB from '../eventimages/2021leagueB.png'
+import leagueC from '../eventimages/2022league.png'
 const Events = () => {
 
 
@@ -30,7 +32,7 @@ const Events = () => {
       </PastTitle>
       <Past>
       <Card data-aos="fade-up">
-          <Image></Image>
+          <Image className="leagueC"></Image>
           <Fields>
             <FirstLine>
               <Date>15-17 Aug 2022</Date>
@@ -45,7 +47,7 @@ const Events = () => {
           </Fields>
         </Card>
         <Card  data-aos="fade-up">
-          <Image></Image>
+          <Image className="leagueB"></Image>
           <Fields>
             <FirstLine>
               <Date>27-29 Dec 2021</Date>
@@ -60,7 +62,7 @@ const Events = () => {
           </Fields>
         </Card>
         <Card  data-aos="fade-up">
-          <Image></Image>
+          <Image className="leagueA"></Image>
           <Fields>
             <FirstLine>
               <Date>4-5 Sep 2021</Date>
@@ -75,7 +77,7 @@ const Events = () => {
           </Fields>
         </Card>
         <Card  data-aos="fade-up">
-          <Image></Image>
+          <Image className="valoA"></Image>
           <Fields>
             <FirstLine>
               <Date>30 Jul-1 Aug 2021</Date>
@@ -105,11 +107,23 @@ export const Card = styled.div`
 
   display:flex;
   flex-direction:column;
+  .valoA{
+    background-image: url(${valoA});
+  }
+  .leagueA{
+    background-image: url(${leagueA});
+  }
+  .leagueB{
+    background-image: url(${leagueB});
+  }
+  .leagueC{
+    background-image: url(${leagueC});
+  }
+  
   
 `
 
 export const Image = styled.div`
-  background-image: url(${purple});
   background-position:bottom;
   width:100%;
   height:102px;

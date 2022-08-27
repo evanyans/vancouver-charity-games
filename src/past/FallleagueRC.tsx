@@ -12,7 +12,7 @@ const SummervalBCH = () => {
         <Title>2021 Summer League of Legends Tournament</Title>
         <Stats>
           <Money>$<CountUp end={185} duration={1} /><div className="sub">Money Raised</div></Money>
-          <People><CountUp end={99} duration={1} /><div className = "sub">Participants</div></People>
+          <People><CountUp end={52} duration={1} /><div className = "sub">Participants</div></People>
           <Sponsor>Canadian Red Cross<div className = "sub">Donation</div></Sponsor>
         </Stats>
         <Winners>Winners</Winners>

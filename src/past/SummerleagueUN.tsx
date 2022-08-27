@@ -12,7 +12,7 @@ const SummerleagueUN = () => {
         <Title>2022 Summer League of Legends Tournament</Title>
         <Stats>
           <Money>$<CountUp end={100} duration={1} /><div className="sub">Money Raised</div></Money>
-          <People><CountUp end={99} duration={1} /><div className = "sub">Participants</div></People>
+          <People><CountUp end={66} duration={1} /><div className = "sub">Participants</div></People>
           <Sponsor>UNICEF<div className = "sub">Donation</div></Sponsor>
         </Stats>
         <Winners>Winners</Winners>

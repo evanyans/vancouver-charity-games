@@ -5,6 +5,7 @@ import gamers from '../images/gamers.png';
 import foodbank from '../images/foodbank.png';
 import redcross from '../images/redcross.png';
 import hospital from '../images/hospital.png';
+import unicef from '../images/uniceflogo.png';
 import { NavLink as Link } from 'react-router-dom';
 import WidgetBot from '@widgetbot/react-embed'
 import Marquee from "react-fast-marquee";
@@ -38,6 +39,9 @@ const HomeV2 = () => {
 
             </Title>
             <Mark gradient={false} gradientColor={[88, 83, 94]} speed={200} >
+                <Donate >
+                    <a href="https://www.unicef.org/" target="_blank"><ContentA><Circle><img className="unicef" src={unicef} alt="foodbank" /></Circle><ContentText>UNICEF<br></br><span>$100 Raised</span></ContentText></ContentA></a>
+                </Donate>
                 <Donate >
                     <a href="https://foodbank.bc.ca/" target="_blank"><ContentA><Circle><img className="foodbank" src={foodbank} alt="foodbank" /></Circle><ContentText>Greater Vancouver Food Bank<br></br><span>$230 Raised</span></ContentText></ContentA></a>
                 </Donate>
@@ -393,6 +397,11 @@ export const Donate = styled.span`
 export const ContentA = styled.div`
     display:flex;
     flex-direction:row;
+    .unicef{
+        width:120px;
+        padding-top:22px;
+        padding-right:18px;
+    }
     .foodbank{
         width:70px;
         padding-top:18px;

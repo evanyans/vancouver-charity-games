@@ -8,7 +8,7 @@ const SummerleagueUN = () => {
   return (
     <Wrapper>
       <Body data-aos="fade-up">
-        <Topic>August 13th - 14th</Topic>
+        <Topic>August 15th - 17th</Topic>
         <Title>2022 Summer League of Legends Tournament</Title>
         <Stats>
           <Money>$<CountUp end={100} duration={1} /><div className="sub">Money Raised</div></Money>

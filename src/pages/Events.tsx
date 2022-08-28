@@ -10,7 +10,7 @@ import gcfb from '../eventimages/gcfb.png'
 import valoA from '../eventimages/2021summer.png'
 import purple from '../eventimages/purple.png'
 import leagueA from '../eventimages/2021league.png'
-import leagueB from '../eventimages/2021leagueb.png'
+import leagueB from '../eventimages/2021leagueB.png'
 import leagueC from '../eventimages/2022league.png'
 const Events = () => {
 /*<Arrow as="a" href="https://docs.google.com/forms/d/e/1FAIpQLSeo7b6DGC0ja79YbVNGNs9FcJwWaDHs5dLSO0xpP8_FL_duoQ/viewform" target="_blank">&#10230;</Arrow>*/

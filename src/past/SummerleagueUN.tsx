@@ -22,7 +22,7 @@ const SummerleagueUN = () => {
             <li>ArrowTron - Aaron Wong</li>
             <li>Earnest - David Xia</li>
             <li>nosleep - Kevin Hui</li>
-            <li>zhanquefanchen - Ares Zhu</li>
+            <li>Viodetta - Ares Zhu</li>
           </ul>
         </List>
         <NavLink to ="/events">Back &gt; </NavLink>

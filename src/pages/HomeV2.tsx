@@ -27,7 +27,7 @@ const HomeV2 = () => {
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo7b6DGC0ja79YbVNGNs9FcJwWaDHs5dLSO0xpP8_FL_duoQ/viewform" target="_blank"><Register>Register Now</Register></a>
                 <Stats data-aos="fade-up">
                     <Charity>
-                        $<CountUp end={600} duration={1.2} />+
+                        $<CountUp end={750} duration={1.2} />+
                         <div className="subtext">Raised for Charity</div>
                     </Charity>
                     <Line></Line>

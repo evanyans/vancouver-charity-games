@@ -36,7 +36,7 @@ const Navbar = ({ toggle }: { toggle: React.MouseEventHandler<SVGElement> }) => 
                         <Info>Donations made through our PayPal are sent towards the current organization we are supporting in our event. 
                             If you are not participating, feel free to donate directly to the organization:</Info>
                         <img className="unicef" src={unicef} />
-                        <a href="https://www.unicef.org/" target="_blank"><DonateB>Donate through us</DonateB></a>
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=DM8QBDKHVGUVG" target="_blank"><DonateB>Donate through us</DonateB></a>
                         <a href="https://www.unicef.org/" target="_blank"><DonateLink>UNICEF Website</DonateLink></a>
                     </Items>
                 </Box>

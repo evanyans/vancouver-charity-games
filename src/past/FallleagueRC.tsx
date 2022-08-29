@@ -15,7 +15,7 @@ const SummervalBCH = () => {
           <People><CountUp end={52} duration={1} /><div className = "sub">Participants</div></People>
           <Sponsor>Canadian Red Cross<div className = "sub">Donation</div></Sponsor>
         </Stats>
-        <Winners>Winners</Winners>
+        <Winners>Winning Team: Ontario, California</Winners>
         <List>
           <ul>
             <li>Sir Darklan - Danny Kuei</li>

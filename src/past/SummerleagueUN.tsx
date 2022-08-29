@@ -15,14 +15,14 @@ const SummerleagueUN = () => {
           <People><CountUp end={66} duration={1} /><div className = "sub">Participants</div></People>
           <Sponsor>UNICEF<div className = "sub">Donation</div></Sponsor>
         </Stats>
-        <Winners>Winners</Winners>
+        <Winners>Winning Team: Who Needs Diomarr</Winners>
         <List>
           <ul>
-            <li>x - x</li>
-            <li>x - x</li>
-            <li>x - x</li>
-            <li>x - x</li>
-            <li>x - x</li>
+            <li>Basically Wolf - Markus Feng</li>
+            <li>ArrowTron - Aaron Wong</li>
+            <li>Earnest - David Xia</li>
+            <li>nosleep - Kevin Hui</li>
+            <li>zhanquefanchen - Ares Zhu</li>
           </ul>
         </List>
         <NavLink to ="/events">Back &gt; </NavLink>

@@ -15,7 +15,7 @@ const SummervalBCH = () => {
           <People><CountUp end={45} duration={1} /><div className = "sub">Participants</div></People>
           <Sponsor>BC Children's Hospital<div className = "sub">Donation</div></Sponsor>
         </Stats>
-        <Winners>Winners</Winners>
+        <Winners>Winning Team: Jit Trippin</Winners>
         <List>
           <ul>
             <li>HEAD HUNTER - Mark Sanda</li>

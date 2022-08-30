@@ -11,7 +11,7 @@ const Sponsor = () => {
         <Body>With the help of our sponsors, we are able to enhance the quality of our events and create
             a better experience for our participants. In return, our organization provides substantial
              advertising to the rising demographic of young adults across North America. Please consider 
-             sponsoring us to support on youth-based opportunities as well as making a charitable impact. <br/><br/><em>
+             sponsoring us to support youth-based opportunities as well as making a charitable impact. <br/><br/><em>
              (Sponsorship package in development)</em></Body>
         
       </Text>

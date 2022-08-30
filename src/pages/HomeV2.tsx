@@ -379,7 +379,7 @@ export const Donate = styled.span`
 
     margin: 0 80px;
     margin-top:20px;
-    width:90%;
+    width:360px;
 
     &:hover{
         cursor:pointer;

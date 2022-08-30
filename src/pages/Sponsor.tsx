@@ -72,8 +72,8 @@ align-self:center;
   @media only screen and (max-width: 600px) {
     font-size:15px;
     line-height:1.5rem;
-    padding-left:2%;
-    padding-right:2%;
+    padding-left:6%;
+    padding-right:6%;
   }
   @media only screen and (min-width: 600px) {
     font-size:20px;

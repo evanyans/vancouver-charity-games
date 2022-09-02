@@ -56,14 +56,19 @@ const HomeV2 = () => {
                 <Text data-aos="fade-up">
                     <Topic >What we do</Topic>
                     <Cause >Game for a Cause</Cause>
-                    <BodyText >Vancouver Charity Games is a not-for-profit organization founded in 2021 with the purpose of supporting local charities through video game tournaments.
-                        <br></br><br></br>
-                        Our group of organizers know all too well the power video games have on bringing people of countless backgrounds together in the name of a shared interest: from the countless attendees at eSports competitions to its growing usage in education, video games continue to grow in popularity and application today with no evidence of stopping.
-                        <br></br><br></br>
-                        Following its explosive growth, our group of friends wondered how we could cultivate our shared interest for video games into something bigger than ourselves. And so, Vancouver Charity Games was born, with the goal of using our shared interest for the purpose of benefiting our community. Through our events, we hope to bring people together to play the games they love while simultaneously raising awareness and funds for the charities we support, fulfilling our mission of cultivating our love for video games into something more - a way to better our communities.
+                    <BodyText >
+                        Vancouver Charity Games is a not-for-profit organization founded in 2021 with the goal
+                        of introducing charitable gaming at the grassroots level through hosting fundraiser tournaments
+                        and other events. We hope the work we do helps inspire gamers to turn their passion into a tool
+                        for good
+                        <br/><br/>
+                        <b>Our Mission:</b> Bringing gamers together through exciting events to engage, have fun, and give back to
+                        our community
+                        <br/>
                     </BodyText>
                     <Link to="/events"><Events>View Events &gt;</Events></Link>
                     <NavLink to="/about">About Us &gt; </NavLink>
+                    <Adjust></Adjust>
                 </Text>
                 <Discord
                     className="gradient-border"
@@ -79,6 +84,14 @@ const HomeV2 = () => {
 }
 
 export default HomeV2
+
+export const Adjust = styled.div`
+    @media only screen and (max-width: 600px) {
+      margin-bottom:0px;
+    }
+    @media only screen and (min-width: 600px) {
+        margin-bottom:80px;
+    }`
 
 export const Wrapper = styled.div`
     display:flex;
@@ -352,11 +365,14 @@ export const BodyText = styled.div`
     margin-top:20px;
     font-size:18px;
     line-height:1.6rem;
+    
     @media only screen and (max-width: 600px) {
       font-size:14px;
+      margin-bottom:0px;
     }
     @media only screen and (min-width: 600px) {
         font-size:18px;
+        margin-bottom:30px;
 
     }
 
@@ -509,6 +525,7 @@ font-size:19px;
 
 export const Discord = styled(WidgetBot)`
 display:flex;
+z-index:999;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     margin-left:auto;
     border-color: var(--gradient);
@@ -561,7 +578,8 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
     }
 
     @media only screen and (min-width: 1200px) {
-        right:3%
+        right:3%;
+        top:0px;
     }
 `
 

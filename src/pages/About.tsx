@@ -100,7 +100,7 @@ const About = () => {
         <Text data-aos="fade-up">
           <Topic >About Us</Topic>
           <Title >Who we are</Title>
-          <SubText>Vancouver Charity Games is a youth led not-for-profit organization, dedicated to providing esports opportunities to players across North America. Our video game tournaments provide fun and competitive experiences for high school and university students, while raising money for local causes. As of now we have invited over 200 participants across Canada and the United States, and raised over $600 towards charitable funds.</SubText>
+          <SubText>Vancouver Charity Games is a youth led not-for-profit organization, dedicated to providing esports opportunities to players across North America. Our video game tournaments provide fun and competitive experiences for high school and university students, while raising money for local causes. As of now we have invited over 200 participants across Canada and the United States, and raised over $750 towards charitable funds.</SubText>
 
         </Text>
         <img className="sombra" src={sombra} alt="sombra" />

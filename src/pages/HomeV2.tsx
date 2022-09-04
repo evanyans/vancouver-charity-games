@@ -64,7 +64,7 @@ const HomeV2 = () => {
                         <br/><br/>
                         <b>Our Mission:</b> Bringing gamers together through exciting events to engage, have fun, and give back to
                         our community
-                        <br/>
+                        <img className="vc" src={vcg} alt="redcross" />
                     </BodyText>
                     <Link to="/events"><Events>View Events &gt;</Events></Link>
                     <NavLink to="/about">About Us &gt; </NavLink>
@@ -90,7 +90,7 @@ export const Adjust = styled.div`
       margin-bottom:0px;
     }
     @media only screen and (min-width: 600px) {
-        margin-bottom:80px;
+        margin-bottom:0px;
     }`
 
 export const Wrapper = styled.div`
@@ -375,7 +375,10 @@ export const BodyText = styled.div`
         margin-bottom:30px;
 
     }
-
+    .vc{
+        width:520px;
+        margin-top:50px;
+    }
 
 `
 

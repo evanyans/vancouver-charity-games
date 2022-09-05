@@ -64,11 +64,12 @@ const HomeV2 = () => {
                         <br/><br/>
                         <b>Our Mission:</b> Bringing gamers together through exciting events to engage, have fun, and give back to
                         our community
-                        <img className="vc" src={vcg} alt="redcross" />
+                        
                     </BodyText>
                     <Link to="/events"><Events>View Events &gt;</Events></Link>
                     <NavLink to="/about">About Us &gt; </NavLink>
                     <Adjust></Adjust>
+                    <img className="vc" src={vcg} alt="redcross" />
                 </Text>
                 <Discord
                     className="gradient-border"
@@ -310,22 +311,44 @@ export const Text = styled.div`
     padding-top:4%;
     padding-left:4%;
     padding-right:6%;
-    padding-bottom:10%;
+    padding-bottom:4%;
+    .vc{
+        width:710px;
+        position:relative;
+        margin-top:-30px;
+        top:90px;
+    }
     @media only screen and (max-width: 600px) {
         margin-left:auto;
         margin-right:auto;
+        .vc{
+        display:none;
+    }
     }
 
     @media only screen and (min-width: 600px) {
         margin-left:auto;
         margin-right:auto;
         max-width:100%;
+        .vc{
+        width:400px;
+        position:relative;
+        margin-top:-20px;
+        top:90px;
+    
     }
 
     @media only screen and (min-width: 1200px) {
         margin-right:auto;
         margin-left:15%;
         max-width:740px;
+        .vc{
+        width:710px;
+        position:relative;
+        margin-top:-40px;
+        top:90px;
+    
+    }
     }
 
 
@@ -372,13 +395,10 @@ export const BodyText = styled.div`
     }
     @media only screen and (min-width: 600px) {
         font-size:18px;
-        margin-bottom:30px;
+        margin-bottom:0px;
 
     }
-    .vc{
-        width:520px;
-        margin-top:50px;
-    }
+
 
 `
 
